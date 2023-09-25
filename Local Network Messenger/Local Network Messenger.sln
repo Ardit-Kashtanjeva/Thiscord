@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LNM Exclusive", "LNM Exclusive\LNM Exclusive.csproj", "{A7DEC84C-0326-4853-B568-A527009C35E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Local Network Messenger", "Local Network Messenger\Local Network Messenger.csproj", "{3BC98C64-6268-43EA-8DEF-2B77943A3594}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7DEC84C-0326-4853-B568-A527009C35E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7DEC84C-0326-4853-B568-A527009C35E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7DEC84C-0326-4853-B568-A527009C35E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7DEC84C-0326-4853-B568-A527009C35E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BC98C64-6268-43EA-8DEF-2B77943A3594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC98C64-6268-43EA-8DEF-2B77943A3594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC98C64-6268-43EA-8DEF-2B77943A3594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BC98C64-6268-43EA-8DEF-2B77943A3594}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {696F7922-6655-4053-8420-6B43A620A1DD}
+		SolutionGuid = {730C2ED1-0BD2-4CF4-BA90-BD7F191E3A88}
 	EndGlobalSection
 EndGlobal
