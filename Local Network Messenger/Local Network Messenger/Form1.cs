@@ -81,7 +81,7 @@ namespace Local_Network_Messenger
         {
             if (tcpClient != null && tcpClient.Connected)
             {
-                string messageToSend = TxtMessageBox.Text;
+                string messageToSend = TxtMessageBox.Text + "\n";
                 byte[] data = Encoding.UTF8.GetBytes(messageToSend);
                 NetworkStream stream = tcpClient.GetStream();
                 stream.Write(data, 0, data.Length);

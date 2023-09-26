@@ -105,7 +105,7 @@
             // 
             // CmdConnextToTarget
             // 
-            CmdConnextToTarget.Location = new Point(1044, 80);
+            CmdConnextToTarget.Location = new Point(1052, 80);
             CmdConnextToTarget.Name = "CmdConnextToTarget";
             CmdConnextToTarget.Size = new Size(188, 58);
             CmdConnextToTarget.TabIndex = 7;
