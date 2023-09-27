@@ -57,7 +57,7 @@ namespace Local_Network_Messenger
 
         private void DisplayReceivedMessage(string message)
         {
-            TxtMessageHistory.AppendText($"[Target]: {message}\n");
+            TxtMessageHistory.AppendText($"\r\n[Target]: {message}");
         }
 
         private void ConnectToTargetButton_Click(object sender, EventArgs e)
@@ -92,9 +92,7 @@ namespace Local_Network_Messenger
 
         private void DisplaySentMessage(string message)
         {
-            TxtMessageHistory.AppendText($"[You]: {message}\n");
+            TxtMessageHistory.AppendText($"\r\n[You]: {message}");
         }
-
-
     }
 }

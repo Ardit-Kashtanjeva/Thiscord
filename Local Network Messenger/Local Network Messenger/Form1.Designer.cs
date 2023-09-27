@@ -41,51 +41,57 @@
             // 
             // TxtMessageHistory
             // 
-            TxtMessageHistory.Location = new Point(978, 182);
-            TxtMessageHistory.MaximumSize = new Size(250, 150);
-            TxtMessageHistory.MinimumSize = new Size(450, 600);
+            TxtMessageHistory.Location = new Point(403, 67);
+            TxtMessageHistory.Margin = new Padding(1, 1, 1, 1);
+            TxtMessageHistory.MaximumSize = new Size(105, 57);
+            TxtMessageHistory.MinimumSize = new Size(188, 222);
             TxtMessageHistory.Multiline = true;
             TxtMessageHistory.Name = "TxtMessageHistory";
-            TxtMessageHistory.Size = new Size(450, 600);
+            TxtMessageHistory.Size = new Size(188, 222);
             TxtMessageHistory.TabIndex = 0;
             // 
             // LblYourIp
             // 
             LblYourIp.AutoSize = true;
-            LblYourIp.Location = new Point(36, 27);
+            LblYourIp.Location = new Point(15, 10);
+            LblYourIp.Margin = new Padding(1, 0, 1, 0);
             LblYourIp.Name = "LblYourIp";
-            LblYourIp.Size = new Size(117, 41);
+            LblYourIp.Size = new Size(47, 15);
             LblYourIp.TabIndex = 1;
             LblYourIp.Text = "Your IP:";
             // 
             // TxtUserIp
             // 
-            TxtUserIp.Location = new Point(173, 27);
+            TxtUserIp.Location = new Point(71, 10);
+            TxtUserIp.Margin = new Padding(1, 1, 1, 1);
             TxtUserIp.Name = "TxtUserIp";
-            TxtUserIp.Size = new Size(529, 47);
+            TxtUserIp.Size = new Size(220, 23);
             TxtUserIp.TabIndex = 2;
             // 
             // TxtMessageBox
             // 
-            TxtMessageBox.Location = new Point(978, 788);
-            TxtMessageBox.MinimumSize = new Size(350, 100);
+            TxtMessageBox.Location = new Point(403, 291);
+            TxtMessageBox.Margin = new Padding(1, 1, 1, 1);
+            TxtMessageBox.MinimumSize = new Size(136, 50);
             TxtMessageBox.Name = "TxtMessageBox";
-            TxtMessageBox.Size = new Size(350, 100);
+            TxtMessageBox.Size = new Size(136, 50);
             TxtMessageBox.TabIndex = 3;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(877, 27);
+            textBox1.Location = new Point(361, 10);
+            textBox1.Margin = new Padding(1, 1, 1, 1);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(529, 47);
+            textBox1.Size = new Size(220, 23);
             textBox1.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(716, 30);
+            label1.Location = new Point(295, 11);
+            label1.Margin = new Padding(1, 0, 1, 0);
             label1.Name = "label1";
-            label1.Size = new Size(155, 41);
+            label1.Size = new Size(61, 15);
             label1.TabIndex = 5;
             label1.Text = "Friends Ip:";
             // 
@@ -94,10 +100,11 @@
             CmdSend.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             CmdSend.BackgroundImage = (Image)resources.GetObject("CmdSend.BackgroundImage");
             CmdSend.BackgroundImageLayout = ImageLayout.Stretch;
-            CmdSend.Location = new Point(1328, 788);
-            CmdSend.MinimumSize = new Size(100, 100);
+            CmdSend.Location = new Point(541, 291);
+            CmdSend.Margin = new Padding(1, 1, 1, 1);
+            CmdSend.MinimumSize = new Size(50, 50);
             CmdSend.Name = "CmdSend";
-            CmdSend.Size = new Size(100, 100);
+            CmdSend.Size = new Size(50, 50);
             CmdSend.TabIndex = 6;
             CmdSend.UseMnemonic = false;
             CmdSend.UseVisualStyleBackColor = true;
@@ -105,9 +112,10 @@
             // 
             // CmdConnextToTarget
             // 
-            CmdConnextToTarget.Location = new Point(1052, 80);
+            CmdConnextToTarget.Location = new Point(438, 35);
+            CmdConnextToTarget.Margin = new Padding(1, 1, 1, 1);
             CmdConnextToTarget.Name = "CmdConnextToTarget";
-            CmdConnextToTarget.Size = new Size(188, 58);
+            CmdConnextToTarget.Size = new Size(77, 21);
             CmdConnextToTarget.TabIndex = 7;
             CmdConnextToTarget.Text = "Connect";
             CmdConnextToTarget.UseVisualStyleBackColor = true;
@@ -115,9 +123,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1455, 917);
+            ClientSize = new Size(645, 390);
             Controls.Add(CmdConnextToTarget);
             Controls.Add(CmdSend);
             Controls.Add(label1);
@@ -126,6 +134,7 @@
             Controls.Add(TxtUserIp);
             Controls.Add(LblYourIp);
             Controls.Add(TxtMessageHistory);
+            Margin = new Padding(1, 1, 1, 1);
             Name = "Form1";
             Text = "LNM";
             ResumeLayout(false);
