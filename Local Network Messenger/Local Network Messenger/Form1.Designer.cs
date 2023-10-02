@@ -41,12 +41,14 @@
             // 
             // TxtMessageHistory
             // 
+            TxtMessageHistory.BackColor = SystemColors.Window;
             TxtMessageHistory.Location = new Point(403, 67);
-            TxtMessageHistory.Margin = new Padding(1, 1, 1, 1);
+            TxtMessageHistory.Margin = new Padding(1);
             TxtMessageHistory.MaximumSize = new Size(105, 57);
             TxtMessageHistory.MinimumSize = new Size(188, 222);
             TxtMessageHistory.Multiline = true;
             TxtMessageHistory.Name = "TxtMessageHistory";
+            TxtMessageHistory.ReadOnly = true;
             TxtMessageHistory.Size = new Size(188, 222);
             TxtMessageHistory.TabIndex = 0;
             // 
@@ -63,7 +65,7 @@
             // TxtUserIp
             // 
             TxtUserIp.Location = new Point(71, 10);
-            TxtUserIp.Margin = new Padding(1, 1, 1, 1);
+            TxtUserIp.Margin = new Padding(1);
             TxtUserIp.Name = "TxtUserIp";
             TxtUserIp.Size = new Size(220, 23);
             TxtUserIp.TabIndex = 2;
@@ -71,7 +73,7 @@
             // TxtMessageBox
             // 
             TxtMessageBox.Location = new Point(403, 291);
-            TxtMessageBox.Margin = new Padding(1, 1, 1, 1);
+            TxtMessageBox.Margin = new Padding(1);
             TxtMessageBox.MinimumSize = new Size(136, 50);
             TxtMessageBox.Name = "TxtMessageBox";
             TxtMessageBox.Size = new Size(136, 50);
@@ -80,7 +82,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(361, 10);
-            textBox1.Margin = new Padding(1, 1, 1, 1);
+            textBox1.Margin = new Padding(1);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(220, 23);
             textBox1.TabIndex = 4;
@@ -101,7 +103,7 @@
             CmdSend.BackgroundImage = (Image)resources.GetObject("CmdSend.BackgroundImage");
             CmdSend.BackgroundImageLayout = ImageLayout.Stretch;
             CmdSend.Location = new Point(541, 291);
-            CmdSend.Margin = new Padding(1, 1, 1, 1);
+            CmdSend.Margin = new Padding(1);
             CmdSend.MinimumSize = new Size(50, 50);
             CmdSend.Name = "CmdSend";
             CmdSend.Size = new Size(50, 50);
@@ -113,7 +115,7 @@
             // CmdConnextToTarget
             // 
             CmdConnextToTarget.Location = new Point(438, 35);
-            CmdConnextToTarget.Margin = new Padding(1, 1, 1, 1);
+            CmdConnextToTarget.Margin = new Padding(1);
             CmdConnextToTarget.Name = "CmdConnextToTarget";
             CmdConnextToTarget.Size = new Size(77, 21);
             CmdConnextToTarget.TabIndex = 7;
@@ -123,6 +125,7 @@
             // 
             // Form1
             // 
+            AcceptButton = CmdSend;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(645, 390);
@@ -134,7 +137,7 @@
             Controls.Add(TxtUserIp);
             Controls.Add(LblYourIp);
             Controls.Add(TxtMessageHistory);
-            Margin = new Padding(1, 1, 1, 1);
+            Margin = new Padding(1);
             Name = "Form1";
             Text = "LNM";
             ResumeLayout(false);

@@ -1,0 +1,14 @@
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Debug\net7.0\LNMServer.exe
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Debug\net7.0\LNMServer.deps.json
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Debug\net7.0\LNMServer.runtimeconfig.json
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Debug\net7.0\LNMServer.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Debug\net7.0\LNMServer.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\LNMServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\LNMServer.AssemblyInfoInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\LNMServer.AssemblyInfo.cs
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\LNMServer.csproj.CoreCompileInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\LNMServer.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\refint\LNMServer.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\LNMServer.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\LNMServer.genruntimeconfig.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Debug\net7.0\ref\LNMServer.dll

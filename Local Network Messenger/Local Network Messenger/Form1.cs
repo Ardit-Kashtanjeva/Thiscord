@@ -10,36 +10,11 @@ namespace Local_Network_Messenger
 {
     public partial class Form1 : Form
     {
-        private TcpListener tcpListener;
         private TcpClient tcpClient;
 
         public Form1()
         {
             InitializeComponent();
-            string hostName = Dns.GetHostName();
-            IPHostEntry localHost = Dns.GetHostEntry(hostName);
-            foreach (IPAddress address in localHost.AddressList)
-            {
-                if (address.AddressFamily == AddressFamily.InterNetwork)
-                {
-                    TxtUserIp.Text = address.ToString();
-                    break;
-                }
-            }
-
-            tcpListener = new TcpListener(IPAddress.Any, 12345);
-            tcpListener.Start();
-            ListenForClients();
-        }
-
-        private async void ListenForClients()
-        {
-            while (true)
-            {
-                TcpClient client = await tcpListener.AcceptTcpClientAsync();
-                tcpClient = client;
-                Task.Run(() => HandleTargetMessages());
-            }
         }
 
         private void HandleTargetMessages()
@@ -57,7 +32,8 @@ namespace Local_Network_Messenger
 
         private void DisplayReceivedMessage(string message)
         {
-            TxtMessageHistory.AppendText($"\r\n[Target]: {message}");
+            TxtMessageHistory.AppendText($"\r\n{message}");
+
         }
 
         private void ConnectToTargetButton_Click(object sender, EventArgs e)
@@ -87,6 +63,7 @@ namespace Local_Network_Messenger
                 stream.Write(data, 0, data.Length);
                 stream.Flush();
                 DisplaySentMessage(messageToSend);
+                TxtMessageBox.Text = "";
             }
         }
 
