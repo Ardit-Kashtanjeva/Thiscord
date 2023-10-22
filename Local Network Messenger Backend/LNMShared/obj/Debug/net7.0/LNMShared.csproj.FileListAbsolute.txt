@@ -1,0 +1,12 @@
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\LNMShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\LNMShared.AssemblyInfoInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\LNMShared.AssemblyInfo.cs
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\LNMShared.csproj.CoreCompileInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\bin\Debug\net7.0\LNMShared.deps.json
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\bin\Debug\net7.0\LNMShared.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\bin\Debug\net7.0\LNMShared.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\LNMShared.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\refint\LNMShared.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\LNMShared.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\ref\LNMShared.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMShared\obj\Debug\net7.0\LNMShared.csproj.AssemblyReference.cache

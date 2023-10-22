@@ -1,0 +1,74 @@
+﻿using System.Net.Sockets;
+using LNMShared;
+
+namespace LNMServer;
+
+public class Server : IServer
+{
+    public List<User> Users;
+    public List<Chat> Chats;
+    
+    public void SendMessage(string message, Guid chatGuidId)
+    {
+        var targetChat = Chats.FirstOrDefault(x => x.Guid == chatGuidId);
+        if (targetChat == null)
+        {
+            return;
+        }
+        foreach (var user in targetChat.ChatUsers)
+        {
+            foreach (var connectedClient in user.ConnectedClients)
+            {
+                connectedClient.Client.ReceiveMessage(message, chatGuidId);
+            }
+        }
+    }
+    
+    public void CreateChat(string chatName, string[] userNames)
+    {
+        Chats.Add( new Chat
+        {
+            ChatName = chatName,
+            ChatUsers = userNames.Select(x => Users.FirstOrDefault(y => y.UserName == x)).Where(x => x != null).ToList()!
+        });
+    }
+
+    public void AddChatMember(string userName, Guid chatGuid)
+    {
+        var chat = Chats.FirstOrDefault(x => x.Guid == chatGuid);
+        var user = Users.FirstOrDefault(x => x.UserName == userName);
+        if (chat == null || user == null)
+        {
+            return;
+        }
+        chat.ChatUsers.Add(user);
+    }
+
+    public void SignUp(string userName, string userPassword)
+    {
+        var user = Users.FirstOrDefault(x => x.UserName == userName);
+        if (user == null)
+        {
+            return;
+        }
+        Users.Add(new User
+        {
+            UserName = userName,
+            UserPassword = userPassword
+        }); 
+        
+    }
+
+    public void SignIn(string userName, string userPassword, TcpClient tcpClient)
+    {
+        var user = Users.FirstOrDefault(x => x.UserName == userName);
+        if (user == null)
+        {
+            return;
+        }
+        if (user.UserPassword == userPassword)
+        {
+            user.ConnectedClients.Add(Server23.CurrentClient);
+        }
+    }
+}

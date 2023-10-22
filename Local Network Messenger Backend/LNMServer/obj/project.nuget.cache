@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FBlPqpr9P0iGI/vTi/CLqY1N4w2uPnkP1soijHoV4p4nti19iyej0oNyoVZE6udcxV3q5W3/4dpim2zuI2iG0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMServer\\LNMServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AKA\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\AKA\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
