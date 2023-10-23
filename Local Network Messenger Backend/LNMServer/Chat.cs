@@ -7,7 +7,7 @@ public class Chat
 
     public string ChatName;
 
-    public Guid Guid = new();
+    public Guid Guid;
 
     public List<User> ChatUsers;
     

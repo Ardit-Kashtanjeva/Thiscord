@@ -1,5 +1,5 @@
 ﻿using LNMServer;
 
-var server = new Server23();
+var server = new ServerTcp();
 await server.ListenForClientsAsync();
 

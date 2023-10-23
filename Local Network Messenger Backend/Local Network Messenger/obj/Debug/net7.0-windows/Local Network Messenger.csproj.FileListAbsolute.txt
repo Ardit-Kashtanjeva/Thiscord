@@ -20,3 +20,25 @@ C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\Local Network Me
 C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\Local Network Messenger\bin\Debug\net7.0-windows\LNMShared.pdb
 C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.csproj.CopyComplete
 C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\Local Network Messenger\bin\Debug\net7.0-windows\Castle.Core.dll
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\Local Network Messenger.exe
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\Local Network Messenger.deps.json
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\Local Network Messenger.runtimeconfig.json
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\Local Network Messenger.dll
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\Local Network Messenger.pdb
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\Castle.Core.dll
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\LNMShared.dll
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\bin\Debug\net7.0-windows\LNMShared.pdb
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.csproj.AssemblyReference.cache
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local_Network_Messenger.Form1.resources
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local_Network_Messenger.Properties.Resources.resources
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.csproj.GenerateResource.cache
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.AssemblyInfoInputs.cache
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.AssemblyInfo.cs
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.csproj.CoreCompileInputs.cache
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.csproj.CopyComplete
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.dll
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\refint\Local Network Messenger.dll
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.pdb
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\Local Network Messenger.genruntimeconfig.cache
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\Local Network Messenger\obj\Debug\net7.0-windows\ref\Local Network Messenger.dll
