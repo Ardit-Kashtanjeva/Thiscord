@@ -26,14 +26,24 @@ public class Server : IServer
     
     public void CreateChat(string chatName, string[] userNames)
     {
+        Guid tempGuid = new Guid();
         Chats.Add( new Chat
         {
             ChatName = chatName,
+            Guid = tempGuid,
             ChatUsers = userNames.Select(x => Users.FirstOrDefault(y => y.UserName == x)).Where(x => x != null).ToList()!
         });
+        foreach (var user in Chats.Find(x => x.ChatName == chatName).ChatUsers)
+        {
+            foreach (var client in user.ConnectedClients)
+            {
+                client.Client.AddToChat(chatName,tempGuid);
+            }
+            
+        }
     }
 
-    public void AddChatMember(string userName, Guid chatGuid)
+    public void AddChatMember(string userName,string chatName , Guid chatGuid)
     {
         var chat = Chats.FirstOrDefault(x => x.Guid == chatGuid);
         var user = Users.FirstOrDefault(x => x.UserName == userName);
@@ -42,6 +52,11 @@ public class Server : IServer
             return;
         }
         chat.ChatUsers.Add(user);
+        foreach (var userClient in user.ConnectedClients)
+        {
+            userClient.Client.AddToChat(chatName,chatGuid);
+        }
+        
     }
 
     public void SignUp(string userName, string userPassword)
@@ -68,7 +83,7 @@ public class Server : IServer
         }
         if (user.UserPassword == userPassword)
         {
-            user.ConnectedClients.Add(Server23.CurrentClient);
+            user.ConnectedClients.Add(ServerTcp.CurrentClient);
         }
     }
 }

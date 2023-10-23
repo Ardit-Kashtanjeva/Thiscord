@@ -7,7 +7,7 @@ using LNMShared;
 
 namespace LNMServer;
 
-public class Server23
+public class ServerTcp
 {
     private readonly TcpListener _tcpListener = new(IPAddress.Any, 12345);
     private readonly List<UserClient> _clients = new();
