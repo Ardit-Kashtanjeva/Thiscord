@@ -52,3 +52,6 @@ C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-win
 C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.pdb
 C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.genruntimeconfig.cache
 C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\ref\LNMClient.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\Castle.Core.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.AssemblyReference.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.CopyComplete

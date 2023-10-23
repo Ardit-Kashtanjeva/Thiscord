@@ -150,7 +150,7 @@
                 <Grid HorizontalAlignment="Stretch"
                       Margin="8">
 
-                    <Label Content="@Username"
+                    <Label Content="{Binding SelectedContact.Chatname}"
                            Foreground="White"
                            FontWeight="Bold"
                            Margin="5,0,5,0"

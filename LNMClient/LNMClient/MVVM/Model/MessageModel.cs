@@ -12,6 +12,7 @@ namespace LNMClient.MVVM.Model
         public string UsernameColor { get; set; }
         public string ImageSource { get; set;}
         public string Message { get; set;}
+        public Guid TargetChat { get; set;}
         public DateTime Time { get; set;}
         public bool IsNativeOrigin { get; set; }
         public bool? FirstMessage { get; set; }
