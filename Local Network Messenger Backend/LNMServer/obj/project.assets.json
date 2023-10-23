@@ -133,11 +133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMServer\\LNMServer.csproj",
+      "projectUniqueName": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\LNMServer.csproj",
       "projectName": "LNMServer",
-      "projectPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMServer\\LNMServer.csproj",
+      "projectPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\LNMServer.csproj",
       "packagesPath": "C:\\Users\\AKA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMServer\\obj\\",
+      "outputPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -160,8 +160,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMShared\\LNMShared.csproj": {
-              "projectPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMShared\\LNMShared.csproj"
+            "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMShared\\LNMShared.csproj": {
+              "projectPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMShared\\LNMShared.csproj"
             }
           }
         }

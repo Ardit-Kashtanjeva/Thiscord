@@ -115,11 +115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMShared\\LNMShared.csproj",
+      "projectUniqueName": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMShared\\LNMShared.csproj",
       "projectName": "LNMShared",
-      "projectPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMShared\\LNMShared.csproj",
+      "projectPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMShared\\LNMShared.csproj",
       "packagesPath": "C:\\Users\\AKA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger\\LNMShared\\obj\\",
+      "outputPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMShared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

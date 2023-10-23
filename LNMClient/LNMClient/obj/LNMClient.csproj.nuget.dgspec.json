@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AKA\\source\\repos\\Connect 4\\LNMClient\\LNMClient\\LNMClient.csproj": {}
+    "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AKA\\source\\repos\\Connect 4\\LNMClient\\LNMClient\\LNMClient.csproj": {
+    "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AKA\\source\\repos\\Connect 4\\LNMClient\\LNMClient\\LNMClient.csproj",
+        "projectUniqueName": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj",
         "projectName": "LNMClient",
-        "projectPath": "C:\\Users\\AKA\\source\\repos\\Connect 4\\LNMClient\\LNMClient\\LNMClient.csproj",
+        "projectPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj",
         "packagesPath": "C:\\Users\\AKA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AKA\\source\\repos\\Connect 4\\LNMClient\\LNMClient\\obj\\",
+        "outputPath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\LNMClient\\LNMClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
