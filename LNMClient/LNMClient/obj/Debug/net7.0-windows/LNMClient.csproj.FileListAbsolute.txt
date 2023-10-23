@@ -25,3 +25,30 @@ C:\Users\AKA\source\repos\Connect 4\LNMClient\LNMClient\obj\Debug\net7.0-windows
 C:\Users\AKA\source\repos\Connect 4\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\MessageBox.baml
 C:\Users\AKA\source\repos\Connect 4\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\StylishScrollbar.baml
 C:\Users\AKA\source\repos\Connect 4\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\MenuItemBaseStyle.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.exe
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.deps.json
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.runtimeconfig.json
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\ChatItem.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\ContactCard.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\MenuItemBaseStyle.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\MessageBox.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\StylishScrollbar.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient_MarkupCompile.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient_MarkupCompile.lref
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\App.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.g.resources
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.AssemblyInfoInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.AssemblyInfo.cs
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.CoreCompileInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\refint\LNMClient.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.genruntimeconfig.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\ref\LNMClient.dll
