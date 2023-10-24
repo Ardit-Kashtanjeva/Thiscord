@@ -11,9 +11,7 @@ namespace LNMClient
     /// </summary>
     public partial class MainWindow : Window
     {
-        private TcpClient _tcpClient = new();
-        private TCPSendReceive _tcpSendReceive = new();
-
+       
         public MainWindow()
         {
             InitializeComponent();
@@ -50,9 +48,5 @@ namespace LNMClient
                 Application.Current.Shutdown();
         }
 
-        protected override void OnInitialized(EventArgs e)
-        {
-            _tcpSendReceive.ConnectToServer(_tcpClient);
-        }
     }
 }

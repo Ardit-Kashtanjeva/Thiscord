@@ -1,19 +1,16 @@
 ﻿using Castle.DynamicProxy;
-using LNMClient.Core;
-using static LNMShared.LNMLibrary;
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
-using System.Windows;
 using System;
+using LNMShared;
 
 namespace LNMClient.Core;
 
 public class TCPSendReceive
 {
-    private IServer? _server;
+    private IServer _server;
 
     public void ConnectToServer(TcpClient _tcpClient)
     {
@@ -28,7 +25,7 @@ public class TCPSendReceive
         }
         else
         {
-            MessageBox.Show("Server is not Available");
+            Console.WriteLine("a");
         }
     }
 
@@ -49,7 +46,7 @@ public class TCPSendReceive
     {
         if (_server != null)
         {
-            _server.SendMessage(messageToSend,());
+            //_server.SendMessage(messageToSend, );
             //Add function to add message to current chat and send it to the other chat users
         }
     }

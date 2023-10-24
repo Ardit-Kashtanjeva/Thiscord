@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "imMAsk3yZ0ns+bFpqRE2wxFo3WSWR5RBLMQjuWTiMwlgJa7ChbrbVqA2B85OXFse8vGF1cF+GenBibmNhGMurg==",
+  "dgSpecHash": "NG6o3sktQ1Cze4nr8/9MHbcNgdGFBWz71OQHmoYm9oN4/OjDhuWZSzSgMtaT5bWxyf13RpfVMsnQNMGt9awt/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\LNMServer.csproj",
+  "projectFilePath": "E:\\Repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\LNMServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\AKA\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\AKA\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "C:\\Users\\ardit\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\ardit\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\AKA\\source\\repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

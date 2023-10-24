@@ -46,7 +46,25 @@ namespace LNMClient.MVVM.ViewModel
             Messages = new ObservableCollection<MessageModel>();
             Contacts = new ObservableCollection<ContactModel>();
 
-            
+
+            Messages.Add(new MessageModel 
+            { 
+                Message = "LOOOL",
+                FirstMessage = false,
+                IsNativeOrigin = false,
+                Time = DateTime.Now,
+                Username = "ARDIJEEET",
+                UsernameColor = "#FFFFFF",
+                TargetChat = new Guid(),
+                ImageSource = "https://image.migros.ch/mo-boxed/v-w-1000-h-1000/10d73ebff5ec5b53787f83f3d16af5981a872401/knorr-aromat.jpg"
+            });
+
+            Contacts.Add(new ContactModel
+            {
+                Chatname = "ASDSADSADAD",
+                Messages = Messages,
+                ImageSource = "https://image.migros.ch/mo-boxed/v-w-1000-h-1000/10d73ebff5ec5b53787f83f3d16af5981a872401/knorr-aromat.jpg"
+            });
 
 
 

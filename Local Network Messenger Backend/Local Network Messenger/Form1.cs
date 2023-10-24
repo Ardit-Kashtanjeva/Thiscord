@@ -11,8 +11,8 @@ namespace Local_Network_Messenger
     public partial class Form1 : Form
     {
 
-        private TcpClient _tcpClient = new TcpClient();
-        private TCPSendReceive _tcpSendReceive = new TCPSendReceive();
+        private TcpClient _tcpClient = new();
+        private TCPSendReceive _tcpSendReceive = new();
 
         public Form1()
         {
