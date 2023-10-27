@@ -84,6 +84,7 @@ public class Server : IServer
         if (user.UserPassword == userPassword)
         {
             user.ConnectedClients.Add(ServerTcp.CurrentClient);
+            ServerTcp.CurrentClient.Client.GetSignedIn();
         }
-    }
+    }   
 }

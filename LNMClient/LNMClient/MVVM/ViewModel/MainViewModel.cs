@@ -67,9 +67,6 @@ namespace LNMClient.MVVM.ViewModel
             });
 
 
-
-
-
         }
     }
 }

@@ -17,8 +17,8 @@ namespace LNMClient
 
     public partial class App : Application
     {
-        private TcpClient _tcpClient = new();
-        private TCPSendReceive _tcpSendReceive = new();
+        public TcpClient _tcpClient = new();
+        public TCPSendReceive _tcpSendReceive = new();
 
         protected override void OnStartup(StartupEventArgs e)
         {

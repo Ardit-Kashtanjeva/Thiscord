@@ -48,11 +48,11 @@ public class ServerTcp
         {
             string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
             var message = JsonSerializer.Deserialize<TCPMessage>(receivedMessage);
+            
+            CurrentClient = userClient;
 
             lock (CurrentClient)
             {
-                CurrentClient = userClient;
-
                 _server.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
 
                 CurrentClient = null!;

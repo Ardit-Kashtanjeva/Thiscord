@@ -5,16 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System;
 using LNMShared;
+using System.Text.Json;
 
 namespace LNMClient.Core;
 
 public class TCPSendReceive
 {
-    private IServer _server;
+    public IServer _server;
+    private IClient _client;
 
     public void ConnectToServer(TcpClient _tcpClient)
     {
-        string targetIpAddress = "98.71.24.184";
+        string targetIpAddress = "127.0.0.1";
 
         if (IPAddress.TryParse(targetIpAddress, out IPAddress targetAddress))
         {
@@ -38,16 +40,9 @@ public class TCPSendReceive
         while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
         {
             string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-            //Add Message function
-        }
-    }
+            var message = JsonSerializer.Deserialize<TCPMessage>(receivedMessage);
 
-    public void SendMessage(string messageToSend)
-    {
-        if (_server != null)
-        {
-            //_server.SendMessage(messageToSend, );
-            //Add function to add message to current chat and send it to the other chat users
+            _client.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
         }
     }
 }

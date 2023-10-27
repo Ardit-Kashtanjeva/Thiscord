@@ -55,9 +55,6 @@ C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-win
 C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\Castle.Core.dll
 C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.AssemblyReference.cache
 C:\Users\AKA\source\repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.CopyComplete
-E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.dll
-E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\refint\LNMClient.dll
-E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.pdb
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.exe
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.deps.json
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.runtimeconfig.json
@@ -65,11 +62,13 @@ E:\Repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.dl
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\LNMClient.pdb
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\Castle.Core.dll
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.AssemblyReference.cache
+E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LoginScreen.baml
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\ChatItem.baml
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\ContactCard.baml
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\MenuItemBaseStyle.baml
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\MessageBox.baml
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\Themes\StylishScrollbar.baml
+E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LoginScreen.g.cs
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\MainWindow.g.cs
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\App.g.cs
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -83,5 +82,8 @@ E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.As
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.AssemblyInfo.cs
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.CoreCompileInputs.cache
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.csproj.CopyComplete
+E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.dll
+E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\refint\LNMClient.dll
+E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.pdb
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.genruntimeconfig.cache
 E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\ref\LNMClient.dll

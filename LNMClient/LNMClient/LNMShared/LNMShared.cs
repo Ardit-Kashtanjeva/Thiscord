@@ -29,6 +29,8 @@ namespace LNMShared
         public void ReceiveMessage(string message, Guid chatGuid);
 
         public void AddToChat(string chatName, Guid chatGuid);
+
+        public void GetSignedIn();
     }
 
     public class TCPMessage
