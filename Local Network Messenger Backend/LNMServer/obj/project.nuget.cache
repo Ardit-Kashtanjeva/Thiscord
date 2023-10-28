@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NG6o3sktQ1Cze4nr8/9MHbcNgdGFBWz71OQHmoYm9oN4/OjDhuWZSzSgMtaT5bWxyf13RpfVMsnQNMGt9awt/Q==",
+  "dgSpecHash": "XGlIKcHmorcAMyQeGlj4KL0CkTCSzRkVAT6SUKjAe4gMZw8e10aqzaVMK0yNS9yo9sDvfLfYEeo5iwLAUKA1Zg==",
   "success": true,
-  "projectFilePath": "E:\\Repos\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\LNMServer.csproj",
+  "projectFilePath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\Local Network Messenger Backend\\LNMServer\\LNMServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ardit\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\ardit\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "C:\\Users\\AKA\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\AKA\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\AKA\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JCwfFLJj/SVf7ExT1SvqgcZE98uA7dCZQsYKU28MNe/I2MfbFDSRrVk+rXuLTTiA3tGdqbcUUqBIW2enOFty1A==",
+  "dgSpecHash": "dekBhoXUJdNLWfVUObdR4hbgPWpkofEoa7Z+uSHsIFlDSEGwCCPhBVSyFCh6OwtuJkrc3b+ZmYxccWi43zHrWg==",
   "success": true,
-  "projectFilePath": "E:\\Repos\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj",
+  "projectFilePath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ardit\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\ardit\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "C:\\Users\\AKA\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\AKA\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\AKA\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -5,8 +5,8 @@ namespace LNMServer;
 
 public class Server : IServer
 {
-    public List<User> Users;
-    public List<Chat> Chats;
+    public List<User> Users = new();
+    public List<Chat> Chats = new();
     
     public void SendMessage(string message, Guid chatGuidId)
     {
@@ -61,11 +61,6 @@ public class Server : IServer
 
     public void SignUp(string userName, string userPassword)
     {
-        var user = Users.FirstOrDefault(x => x.UserName == userName);
-        if (user == null)
-        {
-            return;
-        }
         Users.Add(new User
         {
             UserName = userName,

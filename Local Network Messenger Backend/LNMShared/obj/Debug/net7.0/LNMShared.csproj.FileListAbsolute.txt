@@ -22,3 +22,15 @@ E:\Repos\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.
 E:\Repos\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\refint\LNMShared.dll
 E:\Repos\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.pdb
 E:\Repos\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\ref\LNMShared.dll
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\bin\Debug\net7.0\LNMShared.deps.json
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\bin\Debug\net7.0\LNMShared.dll
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\bin\Debug\net7.0\LNMShared.pdb
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.csproj.AssemblyReference.cache
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.AssemblyInfoInputs.cache
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.AssemblyInfo.cs
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.csproj.CoreCompileInputs.cache
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.dll
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\refint\LNMShared.dll
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\LNMShared.pdb
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMShared\obj\Debug\net7.0\ref\LNMShared.dll

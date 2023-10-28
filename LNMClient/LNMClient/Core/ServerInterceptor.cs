@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.Json;
 using Castle.DynamicProxy;
 using LNMShared;
+using Newtonsoft.Json;
 
 namespace LNMClient.Core;
 
@@ -22,7 +23,7 @@ public class ServerInterceptor : IInterceptor
 
     private void SendOverTcp(string methodName, params object[] parameters)
     {
-        var str = JsonSerializer.Serialize(new TCPMessage
+        var str = JsonConvert.SerializeObject(new TCPMessage
         {
             MethodName = methodName,
             Parameters = parameters

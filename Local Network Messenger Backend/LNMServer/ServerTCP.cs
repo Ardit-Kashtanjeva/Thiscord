@@ -4,6 +4,7 @@ using System.Text;
 using System.Text.Json;
 using Castle.DynamicProxy;
 using LNMShared;
+using Newtonsoft.Json;
 
 namespace LNMServer;
 
@@ -47,7 +48,7 @@ public class ServerTcp
         while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
         {
             string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-            var message = JsonSerializer.Deserialize<TCPMessage>(receivedMessage);
+            var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
             
             CurrentClient = userClient;
 

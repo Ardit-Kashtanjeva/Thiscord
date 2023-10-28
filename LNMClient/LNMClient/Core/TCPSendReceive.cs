@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System;
 using LNMShared;
 using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace LNMClient.Core;
 
@@ -40,7 +41,7 @@ public class TCPSendReceive
         while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
         {
             string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-            var message = JsonSerializer.Deserialize<TCPMessage>(receivedMessage);
+            var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
 
             _client.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
         }

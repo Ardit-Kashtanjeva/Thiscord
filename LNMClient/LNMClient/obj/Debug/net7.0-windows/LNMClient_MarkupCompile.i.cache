@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\Repos\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\
 LNMClient
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-E:\Repos\LNM-Exclusive\LNMClient\LNMClient\App.xaml
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\LNMClient\LNMClient\App.xaml
 7525430133
 
 15-422811471
-199-918997370
+2001530427522
 LoginScreen.xaml;MainWindow.xaml;Themes\ChatItem.xaml;Themes\ContactCard.xaml;Themes\MenuItemBaseStyle.xaml;Themes\MessageBox.xaml;Themes\StylishScrollbar.xaml;
 
 False
