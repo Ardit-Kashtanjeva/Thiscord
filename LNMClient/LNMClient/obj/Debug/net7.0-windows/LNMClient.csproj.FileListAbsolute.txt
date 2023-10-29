@@ -120,3 +120,4 @@ C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\
 C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\LNMClient.genruntimeconfig.cache
 C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\LNMClient\LNMClient\obj\Debug\net7.0-windows\ref\LNMClient.dll
 C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+E:\Repos\LNM-Exclusive\LNMClient\LNMClient\bin\Debug\net7.0-windows\Newtonsoft.Json.dll

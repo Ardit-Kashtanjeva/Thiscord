@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.Json;
 using Castle.DynamicProxy;
 using LNMShared;
+using Newtonsoft.Json;
 
 namespace LNMServer;
 
@@ -19,7 +20,7 @@ public class Clientinterceptor : IInterceptor
     {
         if (_tcpClient.Connected)
         {
-            var str = JsonSerializer.Serialize(new TCPMessage
+            var str = JsonConvert.SerializeObject(new TCPMessage
             {
                 MethodName = invocation.Method.Name,
                 Parameters = invocation.Arguments

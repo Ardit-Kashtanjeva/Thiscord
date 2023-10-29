@@ -54,6 +54,20 @@ public class ServerTcp
 
             lock (CurrentClient)
             {
+                if (message.MethodName == "SignIn")
+                {
+                    var newParameters = new object[message.Parameters.Length + 1];
+    
+                    for (int i = 0; i < message.Parameters.Length; i++)
+                    {
+                        newParameters[i] = message.Parameters[i];
+                    }
+
+                    newParameters[message.Parameters.Length] = CurrentClient.TcpClient;
+
+                    message.Parameters = newParameters;
+                }
+                
                 _server.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
 
                 CurrentClient = null!;

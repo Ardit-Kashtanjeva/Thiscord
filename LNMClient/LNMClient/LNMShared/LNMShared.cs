@@ -20,7 +20,7 @@ namespace LNMShared
         public void SignUp(string userName, string userPassword);
 
 
-        public void SignIn(string userName, string userPassword, TcpClient tcpClient);
+        public void SignIn(string userName, string userPassword);
 
     }
 

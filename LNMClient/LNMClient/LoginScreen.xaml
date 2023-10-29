@@ -1,7 +1,9 @@
 ﻿<Window x:Class="LNMClient.LoginScreen"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Login" Height="319" Width="300" FontSize="14" Background="#36393F">
+        Title="Login" Height="319" Width="300" FontSize="14" Background="#36393F"
+        Loaded="Window_Loaded">
+    
     <Border Background="#2e3137" CornerRadius="20" Margin="20">
         <StackPanel Margin="20">
             <Label Content="Login/Sign Up" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>

@@ -13,7 +13,7 @@ namespace LNMClient.Core;
 public class TCPSendReceive
 {
     public IServer _server;
-    private IClient _client;
+    private Client _client = new();
 
     public void ConnectToServer(TcpClient _tcpClient)
     {
@@ -43,7 +43,7 @@ public class TCPSendReceive
             string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
             var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
 
-            _client.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
+            _client.GetType().GetMethod(message.MethodName).Invoke(_client, message.Parameters);
         }
     }
 }

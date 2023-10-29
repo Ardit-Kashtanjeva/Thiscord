@@ -17,14 +17,11 @@ namespace LNMClient
 
     public partial class App : Application
     {
-        public TcpClient _tcpClient = new();
-        public TCPSendReceive _tcpSendReceive = new();
+        
 
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-
-            _tcpSendReceive.ConnectToServer(_tcpClient);
         }
 
     }

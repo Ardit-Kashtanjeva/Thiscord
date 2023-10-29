@@ -1,9 +1,5 @@
 ﻿using LNMShared;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace LNMClient.Core
@@ -13,21 +9,24 @@ namespace LNMClient.Core
         Window logInWindow = Application.Current.MainWindow;
         MainWindow mainWindow = new();
 
-        void IClient.AddToChat(string chatName, Guid chatGuid)
+        public void AddToChat(string chatName, Guid chatGuid)
         {
             throw new NotImplementedException();
         }
 
-        void IClient.GetSignedIn()
+        public void GetSignedIn()
         {
             if (logInWindow != null)
             {
-                mainWindow.Show();
-                logInWindow.Close();
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    mainWindow.Show();
+                    logInWindow.Close();
+                });
             }
         }
 
-        void IClient.ReceiveMessage(string message, Guid chatGuid)
+        public void ReceiveMessage(string message, Guid chatGuid)
         {
             throw new NotImplementedException();
         }

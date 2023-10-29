@@ -87,3 +87,4 @@ C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backen
 C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMServer\obj\Debug\net7.0\LNMServer.genruntimeconfig.cache
 C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMServer\obj\Debug\net7.0\ref\LNMServer.dll
 C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\Local Network Messenger Backend\LNMServer\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Repos\LNM-Exclusive\Local Network Messenger Backend\LNMServer\bin\Debug\net7.0\Newtonsoft.Json.dll
