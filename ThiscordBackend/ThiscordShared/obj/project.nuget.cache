@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/rOrrzvf6sVkimV54cbi1juHvK7yTsQn8wYqpKHK8dUt89LeoVsC0Nj+Wl1xUP1D/S/LQFWFfLyHtJVi9K6IVA==",
+  "success": true,
+  "projectFilePath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordBackend\\ThiscordShared\\ThiscordShared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AKA\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\AKA\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

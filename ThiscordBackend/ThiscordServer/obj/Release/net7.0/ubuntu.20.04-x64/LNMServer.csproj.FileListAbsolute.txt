@@ -1,0 +1,14 @@
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Release\net7.0\ubuntu.20.04-x64\LNMServer
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Release\net7.0\ubuntu.20.04-x64\LNMServer.deps.json
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Release\net7.0\ubuntu.20.04-x64\LNMServer.runtimeconfig.json
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Release\net7.0\ubuntu.20.04-x64\LNMServer.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\bin\Release\net7.0\ubuntu.20.04-x64\LNMServer.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\LNMServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\LNMServer.AssemblyInfoInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\LNMServer.AssemblyInfo.cs
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\LNMServer.csproj.CoreCompileInputs.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\LNMServer.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\refint\LNMServer.dll
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\LNMServer.pdb
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\LNMServer.genruntimeconfig.cache
+C:\Users\AKA\source\repos\LNM-Exclusive\Local Network Messenger\LNMServer\obj\Release\net7.0\ubuntu.20.04-x64\ref\LNMServer.dll
