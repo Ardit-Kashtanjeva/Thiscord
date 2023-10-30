@@ -1,5 +1,0 @@
-C:\Users\AKA\Desktop\Local Network Messenger.exe
-C:\Users\AKA\Desktop\Local Network Messenger.dll
-C:\Users\AKA\Desktop\Local Network Messenger.deps.json
-C:\Users\AKA\Desktop\Local Network Messenger.runtimeconfig.json
-C:\Users\AKA\Desktop\Local Network Messenger.pdb
