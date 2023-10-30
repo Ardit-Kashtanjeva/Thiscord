@@ -8,7 +8,6 @@ namespace LNMClient.MVVM.Model
     {
         public string Chatname { get; set; }
         public Guid ChatGuid { get; set; }
-        public string ImageSource { get; set; }
         public ObservableCollection<MessageModel> Messages { get; set; }
         public string LastMessage => Messages.Last().Message;
     }

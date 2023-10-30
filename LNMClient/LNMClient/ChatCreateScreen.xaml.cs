@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using LNMClient.Core;
+using LNMClient.MVVM.ViewModel;
 
 namespace LNMClient
 {
@@ -13,12 +15,13 @@ namespace LNMClient
     {
         public string chatName { get; set; }
         public Guid ChatGuid { get; set; }
-        public TCPSendReceive TcpSendReceive { get; set; }
-        public ObservableCollection<string>UsernameList = new();
+        public TCPSendReceive TcpSendReceive = TCPSendReceive.instance;
+        public ObservableCollection<string> UsernameList { get; } = new();
 
         public ChatCreateScreen()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
         private void TxtUsername_OnKeyDown(object sender, KeyEventArgs e)
@@ -31,10 +34,7 @@ namespace LNMClient
 
         private void BtnSubmit_OnClick(object sender, RoutedEventArgs e)
         {
-            foreach (var username in UsernameList)
-            {
-                TcpSendReceive._server.AddChatMember(username, chatName, ChatGuid);
-            }
+            TcpSendReceive._server.CreateChat(txtChatName.Text, UsernameList.ToArray());
         }
     }
 }

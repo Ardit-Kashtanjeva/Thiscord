@@ -50,7 +50,8 @@ namespace LNMClient
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            
+            ChatCreateScreen chatCreateScreen = new();
+            chatCreateScreen.Show();
         }
     }
 }

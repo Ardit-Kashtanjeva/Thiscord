@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LNMClient"
         mc:Ignorable="d"
-        Title="Create Chat" Height="319" 
+        Title="Create Chat" Height="375" 
         Width="300" 
         FontSize="14" 
         Background="#36393F">
@@ -14,13 +14,14 @@
             <StackPanel Margin="20">
                 <Label Content="Add Users" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
                 <Separator></Separator>
+                <Label Content="Chatname" Foreground="White"/>
+                <TextBox Name="txtChatName" Background="#545d6a" Foreground="White" FontSize="18" KeyDown="TxtUsername_OnKeyDown" BorderThickness="0"/>
                 <Label Content="Username" Foreground="White"/>
-                <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" FontSize="18" KeyDown="TxtUsername_OnKeyDown"/>
-                <ListBox ItemsSource="{Binding UsernameStrings}" BorderBrush="#545d6a" Background="#2e3137" Margin="0,10,0,5" Height="20">
+                <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" FontSize="18" KeyDown="TxtUsername_OnKeyDown" BorderThickness="0"/>
 
-                </ListBox>
+                <ListBox ItemsSource="{Binding UsernameList}" BorderBrush="#545d6a" Background="#545d6a" Margin="0,10,0,5" Height="75" Foreground="White"/>
                 <Grid>
-                    <Button Name="btnSubmit" Click="BtnSubmit_OnClick" Content="Add Users" Margin="30,1,30,5" Background="#545d6a" Foreground="White" FontSize="18"/>
+                    <Button Name="btnSubmit" Click="BtnSubmit_OnClick" Content="Add Users" Margin="30,1,30,5" Background="#545d6a" Foreground="White" FontSize="18" BorderThickness="0"/>
                 </Grid>
             </StackPanel>
         </Border>

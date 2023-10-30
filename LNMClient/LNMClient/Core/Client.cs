@@ -1,6 +1,10 @@
 ﻿using LNMShared;
 using System;
+using System.Collections.ObjectModel;
 using System.Windows;
+using System.Windows.Documents;
+using LNMClient.MVVM.ViewModel;
+using LNMClient.MVVM.Model;
 
 namespace LNMClient.Core
 {
@@ -11,19 +15,22 @@ namespace LNMClient.Core
 
         public void AddToChat(string chatName, Guid chatGuid)
         {
-            throw new NotImplementedException();
+            MainViewModel.AddContact(
+                (new ContactModel
+                {
+                    Chatname = chatName,
+                    ChatGuid = chatGuid,
+                    Messages = new ObservableCollection<MessageModel>()
+                }));
         }
 
         public void GetSignedIn()
         {
-            if (logInWindow != null)
+            Application.Current.Dispatcher.Invoke(() =>
             {
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    mainWindow.Show();
-                    logInWindow.Close();
-                });
-            }
+                mainWindow.Show();
+                logInWindow.Close();
+            });
         }
 
         public void ReceiveMessage(string message, Guid chatGuid)

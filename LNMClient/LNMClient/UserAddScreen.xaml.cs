@@ -13,7 +13,7 @@ namespace LNMClient
     {
         public string chatName { get; set; }
         public Guid ChatGuid { get; set; }
-        public TCPSendReceive TcpSendReceive { get; set; }
+        public TCPSendReceive TcpSendReceive = TCPSendReceive.instance;
         public ObservableCollection<string>UsernameList = new();
 
         public UserAddScreen()

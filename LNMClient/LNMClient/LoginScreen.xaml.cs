@@ -10,8 +10,7 @@ namespace LNMClient
     /// </summary>
     public partial class LoginScreen : Window
     {
-        public TcpClient _tcpClient = new();
-        public TCPSendReceive _tcpSendReceive;
+        public TCPSendReceive TcpSendReceive;
 
         public LoginScreen()
         {
@@ -20,18 +19,18 @@ namespace LNMClient
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            _tcpSendReceive._server.SignIn(txtUsername.Text, txtPassword.Password);
+            TcpSendReceive._server.SignIn(txtUsername.Text, txtPassword.Password);
         }
 
         private void btnSignUp_Click(object sender, RoutedEventArgs e)
         {
-            _tcpSendReceive._server.SignUp(txtUsername.Text, txtPassword.Password);
+            TcpSendReceive._server.SignUp(txtUsername.Text, txtPassword.Password);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            _tcpSendReceive = new();
-            _tcpSendReceive.ConnectToServer(_tcpClient);
+            TcpSendReceive = TCPSendReceive.Instance(new TcpClient());
+            TcpSendReceive.ConnectToServer();
         }
     }
 }

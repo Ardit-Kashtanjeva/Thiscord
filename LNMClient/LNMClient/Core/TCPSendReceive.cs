@@ -14,15 +14,31 @@ public class TCPSendReceive
 {
     public IServer _server;
     private Client _client = new();
+    public static TcpClient _tcpClient;
+    public static TCPSendReceive instance;
 
-    public void ConnectToServer(TcpClient _tcpClient)
+    private TCPSendReceive(TcpClient tcpClient)  
+    {
+        _tcpClient = tcpClient;
+    }
+
+    public static TCPSendReceive Instance (TcpClient tcpClient)
+    {
+            if (instance == null)
+            {
+                instance = new TCPSendReceive(tcpClient);
+            }
+            return instance;
+    }
+
+    public void ConnectToServer()
     {
         string targetIpAddress = "127.0.0.1";
 
         if (IPAddress.TryParse(targetIpAddress, out IPAddress targetAddress))
         {
             _tcpClient.Connect(targetAddress, 12345);
-            Task.Run(() => HandleTargetMessages(_tcpClient));
+            Task.Run(() => HandleTargetMessages());
             _server = new ProxyGenerator().CreateInterfaceProxyWithoutTarget<IServer>(new ServerInterceptor(_tcpClient));
 
         }
@@ -32,7 +48,7 @@ public class TCPSendReceive
         }
     }
 
-    public void HandleTargetMessages(TcpClient _tcpClient)
+    public void HandleTargetMessages()
     {
         NetworkStream stream = _tcpClient.GetStream();
         byte[] buffer = new byte[1024];
