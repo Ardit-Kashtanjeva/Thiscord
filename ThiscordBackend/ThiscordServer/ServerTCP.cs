@@ -79,7 +79,6 @@ public class ServerTcp
 
                         if (jsonArray != null)
                         {
-                            // Now you can use LINQ to convert the JArray to a string array
                             string[] stringArray = jsonArray.Select(jv => (string)jv).ToArray();
                             message.Parameters[1] = stringArray;
                         }

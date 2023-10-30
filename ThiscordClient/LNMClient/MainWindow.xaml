@@ -195,7 +195,8 @@
                          Height="50"
                          Text="Message @Username"
                          Style="{StaticResource MessageBox}"
-                         Grid.ColumnSpan="2"/>
+                         Grid.ColumnSpan="2"
+                         KeyDown="UIElement_OnKeyDown"/>
 
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"

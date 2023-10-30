@@ -2,6 +2,8 @@
 using System.Windows;
 using System.Windows.Input;
 using System.Net.Sockets;
+using System.Windows.Controls;
+using System.Windows.Media.TextFormatting;
 using LNMClient.Core;
 using LNMClient.MVVM.ViewModel;
 
@@ -57,6 +59,23 @@ namespace LNMClient
         {
             ChatCreateScreen chatCreateScreen = new();
             chatCreateScreen.Show();
+        }
+
+        private void UIElement_OnKeyDown(object sender, KeyEventArgs e)
+        {
+            if (MainViewModel.Instance.SelectedContact != null)
+            {
+                if (e.Key == Key.Enter)
+                {
+                    var selectedContact = MainViewModel.Instance.SelectedContact;
+                    TextBox textBox = (TextBox)sender;
+                    TCPSendReceive _tcpSendReceive = TCPSendReceive.instance;
+
+
+                    _tcpSendReceive._server.SendMessage(textBox.Text, selectedContact.ChatGuid);
+                    textBox.Text = "";
+                }
+            }
         }
     }
 }

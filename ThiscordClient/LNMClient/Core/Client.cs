@@ -1,6 +1,7 @@
 ﻿using LNMShared;
 using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Documents;
 using LNMClient.MVVM.ViewModel;
@@ -36,7 +37,21 @@ namespace LNMClient.Core
 
         public void ReceiveMessage(string message, Guid chatGuid)
         {
-            throw new NotImplementedException();
+            /*
+                var contactModel = mainViewModel.Contacts.FirstOrDefault(x => x.ChatGuid == chatGuid);
+                contactModel.Messages.Add( new MessageModel(
+                {
+                    Username = 
+                });
+            */
         }
     }
 }
+/*
+        public string Username { get; set; }
+        public string UsernameColor { get; set; }
+        public string ImageSource { get; set;}
+        public string Message { get; set;}
+        public Guid TargetChat { get; set;}
+        public DateTime Time { get; set;}
+ */
