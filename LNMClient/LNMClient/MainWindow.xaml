@@ -12,10 +12,6 @@
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip">
 
-    <Window.DataContext>
-        <viewModel:MainViewModel/>
-    </Window.DataContext>
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>

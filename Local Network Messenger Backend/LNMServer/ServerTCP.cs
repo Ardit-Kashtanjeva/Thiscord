@@ -5,6 +5,7 @@ using System.Text.Json;
 using Castle.DynamicProxy;
 using LNMShared;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace LNMServer;
 
@@ -45,33 +46,60 @@ public class ServerTcp
         byte[] buffer = new byte[1024];
         int bytesRead;
 
-        while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
+        try
         {
-            string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-            var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
-            
-            CurrentClient = userClient;
-
-            lock (CurrentClient)
+            while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
             {
-                if (message.MethodName == "SignIn")
+                string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
+            
+                CurrentClient = userClient;
+
+                lock (CurrentClient)
                 {
-                    var newParameters = new object[message.Parameters.Length + 1];
-    
-                    for (int i = 0; i < message.Parameters.Length; i++)
+                    if (message.MethodName == "SignIn")
                     {
-                        newParameters[i] = message.Parameters[i];
+                        var newParameters = new object[message.Parameters.Length + 1];
+    
+                        for (int i = 0; i < message.Parameters.Length; i++)
+                        {
+                            newParameters[i] = message.Parameters[i];
+                        }
+
+                        newParameters[message.Parameters.Length] = CurrentClient.TcpClient;
+
+                        message.Parameters = newParameters;
                     }
 
-                    newParameters[message.Parameters.Length] = CurrentClient.TcpClient;
+                    if (message.MethodName == "CreateChat")
+                    {
+                        object obj = message.Parameters[1];
 
-                    message.Parameters = newParameters;
-                }
+                        JArray jsonArray = obj as JArray;
+
+                        if (jsonArray != null)
+                        {
+                            // Now you can use LINQ to convert the JArray to a string array
+                            string[] stringArray = jsonArray.Select(jv => (string)jv).ToArray();
+                            message.Parameters[1] = stringArray;
+                        }
+                    }
+
+                    if (message.MethodName == "AddChatMember")
+                    {
+                        message.Parameters[2] = Guid.Parse(message.Parameters[2].ToString());
+                    }
                 
-                _server.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
+                    _server.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
 
-                CurrentClient = null!;
+                    CurrentClient = null!;
+                }
             }
         }
+        catch
+        {
+            
+        }
+        
     }
 }

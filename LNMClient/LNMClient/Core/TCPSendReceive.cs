@@ -59,6 +59,11 @@ public class TCPSendReceive
             string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
             var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
 
+            if (message.MethodName == "AddToChat")
+            {
+                message.Parameters[1] = Guid.Parse(message.Parameters[1].ToString());
+            }
+
             _client.GetType().GetMethod(message.MethodName).Invoke(_client, message.Parameters);
         }
     }

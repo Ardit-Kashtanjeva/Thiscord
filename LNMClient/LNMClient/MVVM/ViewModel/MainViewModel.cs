@@ -5,12 +5,15 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using LNMClient.Core;
+using System.Windows;
 
 
 namespace LNMClient.MVVM.ViewModel
 {
     internal class MainViewModel : ObservableObject
     {
+
+        private static MainViewModel instance;
         public ObservableCollection<MessageModel> Messages { get; set; }
         public ObservableCollection<ContactModel> Contacts { get; set; }
 
@@ -42,7 +45,19 @@ namespace LNMClient.MVVM.ViewModel
             }
         }
 
-        public MainViewModel()
+        public static MainViewModel Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new MainViewModel();
+                }
+                return instance;
+            }
+        }
+
+        private MainViewModel()
         {
             Messages = new ObservableCollection<MessageModel>();
             Contacts = new ObservableCollection<ContactModel>();
@@ -53,10 +68,12 @@ namespace LNMClient.MVVM.ViewModel
             Messages.Add(message);
         }
 
-        // Method to add a new contact
         public void AddContact(ContactModel contact)
         {
-            Contacts.Add(contact);
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                Contacts.Add(contact);
+            });
         }
 
     }

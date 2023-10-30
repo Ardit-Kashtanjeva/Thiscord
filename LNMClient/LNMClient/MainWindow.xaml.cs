@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Net.Sockets;
 using LNMClient.Core;
+using LNMClient.MVVM.ViewModel;
 
 namespace LNMClient
 {
@@ -15,6 +16,10 @@ namespace LNMClient
         public MainWindow()
         {
             InitializeComponent();
+
+            MainViewModel sharedViewModel = MainViewModel.Instance;
+
+            DataContext = sharedViewModel;
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

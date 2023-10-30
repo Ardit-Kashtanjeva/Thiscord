@@ -13,7 +13,7 @@ namespace LNMClient
     /// </summary>
     public partial class ChatCreateScreen : Window
     {
-        public string chatName { get; set; }
+        public string ChatName { get; set; }
         public Guid ChatGuid { get; set; }
         public TCPSendReceive TcpSendReceive = TCPSendReceive.instance;
         public ObservableCollection<string> UsernameList { get; } = new();
@@ -34,6 +34,7 @@ namespace LNMClient
 
         private void BtnSubmit_OnClick(object sender, RoutedEventArgs e)
         {
+            Close();
             TcpSendReceive._server.CreateChat(txtChatName.Text, UsernameList.ToArray());
         }
     }

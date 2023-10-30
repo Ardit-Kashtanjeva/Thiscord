@@ -27,7 +27,7 @@
                                 </Ellipse.Fill>
                             </Ellipse>
                             <StackPanel>
-                                <Label Content="{Binding Username}"
+                                <Label Content="{Binding Chatname}"
                                        Foreground="White"/>
                                 <Label Content="{Binding LastMessage}"
                                        Foreground="Gray"

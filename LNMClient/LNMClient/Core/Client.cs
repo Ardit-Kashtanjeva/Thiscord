@@ -12,10 +12,11 @@ namespace LNMClient.Core
     {
         Window logInWindow = Application.Current.MainWindow;
         MainWindow mainWindow = new();
+        MainViewModel mainViewModel = MainViewModel.Instance;
 
         public void AddToChat(string chatName, Guid chatGuid)
         {
-            MainViewModel.AddContact(
+            mainViewModel.AddContact(
                 (new ContactModel
                 {
                     Chatname = chatName,
