@@ -159,9 +159,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj",
-      "projectName": "LNMClient",
-      "projectPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\LNMClient\\LNMClient\\LNMClient.csproj",
+      "projectUniqueName": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\LNMClient\\LNMClient\\ThiscordClient.csproj",
+      "projectName": "ThiscordClient",
+      "projectPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\LNMClient\\LNMClient\\ThiscordClient.csproj",
       "packagesPath": "C:\\Users\\AKA\\.nuget\\packages\\",
       "outputPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\LNMClient\\LNMClient\\obj\\",
       "projectStyle": "PackageReference",
