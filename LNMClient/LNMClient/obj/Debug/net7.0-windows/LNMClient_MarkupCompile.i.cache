@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\LNMClient\LNMClient\App.xaml
-7525430133
-
-15-422811471
+9-346273876
+4-1768992222
+17-137670858
 2001530427522
-LoginScreen.xaml;MainWindow.xaml;Themes\ChatItem.xaml;Themes\ContactCard.xaml;Themes\MenuItemBaseStyle.xaml;Themes\MessageBox.xaml;Themes\StylishScrollbar.xaml;
+ChatCreateScreen.xaml;LoginScreen.xaml;MainWindow.xaml;Themes\ChatItem.xaml;Themes\ContactCard.xaml;Themes\MenuItemBaseStyle.xaml;Themes\MessageBox.xaml;Themes\StylishScrollbar.xaml;UserAddScreen.xaml;
 
 True
 

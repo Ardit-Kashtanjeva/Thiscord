@@ -65,7 +65,7 @@
                             FontWeight="Bold"
                             Click="CloseButton_Click"/>
 
-                    
+
 
 
                 </StackPanel>
@@ -84,24 +84,18 @@
                    Margin="8,0,0,0"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"/>
-
-            <Menu DockPanel.Dock="Top"
-                  Foreground="Gray" Background="#2f3136"
-                  HorizontalContentAlignment="Center" 
-                  VerticalContentAlignment="Center">
-                <MenuItem Height="50" Width="200">
-                    <MenuItem.Header>
-                        <TextBlock Text="Contacts" FontSize="14" 
-                                   Margin="65,0,0,0">
-                        </TextBlock>
-                    </MenuItem.Header>
-                    <MenuItem Header="Add Contact" Background="#2f3136"/>
-                    
-
-                </MenuItem>
-
-            </Menu>
-
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Contacts" FontSize="14" 
+                           Margin="65,0,0,0"
+                           Foreground="Gray" VerticalAlignment="Center"
+                           FontWeight="SemiBold">
+                    </Label>
+                    <Button Width="20" Height="20" Background="Transparent" BorderThickness="0" FontWeight="Bold">
+                        <Image Source="Icons/plus.png" Visibility="Visible" Stretch="Fill" RenderOptions.BitmapScalingMode="Fant"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
             <ListView ItemsSource="{Binding Contacts}"
                       SelectedItem="{Binding SelectedContact}"
                       Background="Transparent"
@@ -129,7 +123,7 @@
                            FontWeight="SemiBold"
                            FontSize="10"
                            Margin="0,-8,0,-5"/>
-                    
+
                 </StackPanel>
 
             </StackPanel>
@@ -137,6 +131,10 @@
 
         <Grid Grid.Column="1"
               Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="781*"/>
+                <ColumnDefinition Width="219*"/>
+            </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
@@ -146,7 +144,7 @@
 
 
             <Border BorderBrush="#2F3136"
-                    BorderThickness="0,0,0,2">
+                    BorderThickness="0,0,0,2" Grid.ColumnSpan="2">
                 <Grid HorizontalAlignment="Stretch"
                       Margin="8">
 
@@ -156,8 +154,18 @@
                            Margin="5,0,5,0"
                            VerticalAlignment="Center"/>
 
+
+
                     <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Right">
+
+                        <Button Width="20" Height="20"
+                                Margin="5,0,5,0" BorderThickness="0" 
+                                Background="Transparent"
+                                Click="ButtonBase_OnClick">
+                            <Image Source="Icons/plus.png"/>
+                        </Button>
+
                         <Image Width="20" Height="20"
                                RenderOptions.BitmapScalingMode="Fant"
                                Margin="5,0,5,0"
@@ -177,10 +185,10 @@
                       BorderThickness="0"
                       ItemContainerStyle="{StaticResource ChatItem}"
                       Margin="8,0,0,0"
-                      Grid.Row="1"/>
+                      Grid.Row="1" Grid.ColumnSpan="2"/>
 
 
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="2" Grid.ColumnSpan="2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="90"/>
