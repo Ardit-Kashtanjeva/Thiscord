@@ -15,6 +15,23 @@ namespace LNMClient.Core
         MainWindow mainWindow = new();
         MainViewModel mainViewModel = MainViewModel.Instance;
 
+        public void MinimizeWindow()
+        {
+            mainWindow.WindowState = WindowState.Minimized;
+        }
+
+        public void MaximizeWindow()
+        {
+            if (mainWindow.WindowState != WindowState.Maximized)
+            {
+                mainWindow.WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                mainWindow.WindowState = WindowState.Normal;
+            }
+        }
+
         public void AddToChat(string chatName, Guid chatGuid)
         {
             mainViewModel.AddContact(
@@ -26,8 +43,18 @@ namespace LNMClient.Core
                 }));
         }
 
-        public void GetSignedIn()
+        public void GetSignedIn(string username)
         {
+            MainViewModel mainViewModel = MainViewModel.Instance;
+            mainViewModel.ClientMessageModel = ( new MessageModel
+            {
+                Username = username,
+                UsernameColor = "#3bff6f",
+                Message = "",
+                ImageSource = $"https://gravatar.com/avatar/{username}?s=400&d=robohash&r=x",
+                Time = DateTime.Now
+            });
+
             Application.Current.Dispatcher.Invoke(() =>
             {
                 mainWindow.Show();
@@ -35,23 +62,19 @@ namespace LNMClient.Core
             });
         }
 
-        public void ReceiveMessage(string message, Guid chatGuid)
+        public void ReceiveMessage(MessageModel message, Guid chatGuid)
         {
-            /*
                 var contactModel = mainViewModel.Contacts.FirstOrDefault(x => x.ChatGuid == chatGuid);
-                contactModel.Messages.Add( new MessageModel(
+
+                if (contactModel == null)
                 {
-                    Username = 
+                    return;
+                }
+
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    contactModel.Messages.Add(message);
                 });
-            */
         }
     }
 }
-/*
-        public string Username { get; set; }
-        public string UsernameColor { get; set; }
-        public string ImageSource { get; set;}
-        public string Message { get; set;}
-        public Guid TargetChat { get; set;}
-        public DateTime Time { get; set;}
- */

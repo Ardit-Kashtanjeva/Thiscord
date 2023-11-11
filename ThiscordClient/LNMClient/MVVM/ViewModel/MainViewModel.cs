@@ -14,10 +14,10 @@ namespace LNMClient.MVVM.ViewModel
     {
 
         private static MainViewModel instance;
+        public MessageModel ClientMessageModel { get; set; }
         public ObservableCollection<MessageModel> Messages { get; set; }
         public ObservableCollection<ContactModel> Contacts { get; set; }
-
-        public RelayCommand SendCommand { get; set; }
+        public RelayCommand SendMessage { get; set; }
 
 
         private ContactModel _selectedContact;
@@ -61,6 +61,22 @@ namespace LNMClient.MVVM.ViewModel
         {
             Messages = new ObservableCollection<MessageModel>();
             Contacts = new ObservableCollection<ContactModel>();
+
+            SendMessage = new RelayCommand(o =>
+            {
+                if (SelectedContact == null)
+                    return;
+
+                var selectedContact = Instance.SelectedContact;
+                TCPSendReceive _tcpSendReceive = TCPSendReceive.instance;
+                MainViewModel mainViewModel = Instance;
+
+                mainViewModel.ClientMessageModel.Message = Message;
+                mainViewModel.ClientMessageModel.Time = DateTime.Now;
+
+                _tcpSendReceive._server.SendMessage(mainViewModel.ClientMessageModel, selectedContact.ChatGuid);
+                Message = "";
+            });
         }
 
         public void AddMessage(MessageModel message)

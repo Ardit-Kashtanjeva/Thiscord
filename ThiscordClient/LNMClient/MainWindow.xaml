@@ -10,7 +10,8 @@
         Background="#36393F"
         WindowStyle="None"
         AllowsTransparency="True"
-        ResizeMode="CanResizeWithGrip">
+        ResizeMode="CanResizeWithGrip"
+        DataContext="{x:Static viewModel:MainViewModel.Instance}">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -105,11 +106,14 @@
 
                 <Border CornerRadius="25"
                         Width="30" Height="30"
-                        Background="#3bff6f"
-                        Margin="18,0,0,0"/>
+                        Margin="18,0,0,0">
+                    <Border.Background>
+                        <ImageBrush ImageSource="{Binding Instance.ClientMessageModel.ImageSource}"/>
+                    </Border.Background>
+                </Border>
 
                 <StackPanel VerticalAlignment="Center">
-                    <Label Content="@Username"
+                    <Label Content="{Binding Instance.ClientMessageModel.Username}"
                            Foreground="White"
                            FontWeight="SemiBold"
                            Margin="0,-5,0,-5"/>
@@ -195,8 +199,7 @@
                          Height="50"
                          Text="Message @Username"
                          Style="{StaticResource MessageBox}"
-                         Grid.ColumnSpan="2"
-                         KeyDown="UIElement_OnKeyDown"/>
+                         DataContext="{x:Static viewModel:MainViewModel.Instance}"/>
 
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"

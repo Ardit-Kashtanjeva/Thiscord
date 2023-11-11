@@ -6,6 +6,7 @@ using Castle.DynamicProxy;
 using LNMShared;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace LNMServer;
 
@@ -44,61 +45,105 @@ public class ServerTcp
     {
         NetworkStream stream = userClient.TcpClient.GetStream();
         byte[] buffer = new byte[1024];
-        int bytesRead;
+        int bytesRead;  
 
-        try
-        {
             while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
             {
                 string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
+
+                var message = new TCPMessage();
+                
+                try
+                {
+                    message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
+                }
+                catch
+                {
+                    
+                } 
             
                 CurrentClient = userClient;
 
                 lock (CurrentClient)
                 {
+                    
+                    
                     if (message.MethodName == "SignIn")
                     {
                         var newParameters = new object[message.Parameters.Length + 1];
-    
+                    
                         for (int i = 0; i < message.Parameters.Length; i++)
                         {
                             newParameters[i] = message.Parameters[i];
                         }
-
+                    
                         newParameters[message.Parameters.Length] = CurrentClient.TcpClient;
-
+                    
                         message.Parameters = newParameters;
-                    }
+                        
+                        _server.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
 
-                    if (message.MethodName == "CreateChat")
+                    }
+                    else
                     {
-                        object obj = message.Parameters[1];
-
-                        JArray jsonArray = obj as JArray;
-
-                        if (jsonArray != null)
-                        {
-                            string[] stringArray = jsonArray.Select(jv => (string)jv).ToArray();
-                            message.Parameters[1] = stringArray;
-                        }
+                        CallMethod(receivedMessage);
                     }
-
-                    if (message.MethodName == "AddChatMember")
-                    {
-                        message.Parameters[2] = Guid.Parse(message.Parameters[2].ToString());
-                    }
-                
-                    _server.GetType().GetMethod(message.MethodName).Invoke(_server, message.Parameters);
-
+                    
+                    //
+                    // if (message.MethodName == "CreateChat")
+                    // {
+                    //     object obj = message.Parameters[1];
+                    //
+                    //     JArray jsonArray = obj as JArray;
+                    //
+                    //     if (jsonArray != null)
+                    //     {
+                    //         string[] stringArray = jsonArray.Select(jv => (string)jv).ToArray();
+                    //         message.Parameters[1] = stringArray;
+                    //     }
+                    // }
+                    //
+                    // if (message.MethodName == "AddChatMember")
+                    // {
+                    //     message.Parameters[2] = Guid.Parse(message.Parameters[2].ToString());
+                    // }
+                    //
                     CurrentClient = null!;
                 }
             }
-        }
-        catch
-        {
             
-        }
-        
     }
+
+    public void CallMethod(string incomingMessage)
+    {
+        var message = JsonSerializer.Deserialize<RcpMessage>(incomingMessage);
+
+        if (message == null)
+            return;
+
+        var method = _server.GetType().GetMethod(message.MethodName);
+        
+        if (method == null)
+            return;
+
+        var methodParameters = method.GetParameters();
+        var parameters = new object[methodParameters.Length];
+
+        for (var i = 0; i < method.GetParameters().Length; i++)
+        {
+            var parameterType = methodParameters[i].ParameterType;
+            var jsonElement = message.Parameters[i];
+
+            var parameter = jsonElement.Deserialize(parameterType);
+
+            if (parameter is null)
+                continue;
+
+            parameters[i] = parameter;
+        }
+
+        method.Invoke(_server, parameters);
+    }
+    
+    
 }

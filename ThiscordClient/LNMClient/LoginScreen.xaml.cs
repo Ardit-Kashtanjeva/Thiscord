@@ -2,6 +2,7 @@
 using LNMShared;
 using System.Net.Sockets;
 using System.Windows;
+using LNMClient.MVVM.ViewModel;
 
 namespace LNMClient
 {
@@ -30,7 +31,9 @@ namespace LNMClient
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             TcpSendReceive = TCPSendReceive.Instance(new TcpClient());
+           
             TcpSendReceive.ConnectToServer();
+            
         }
     }
 }

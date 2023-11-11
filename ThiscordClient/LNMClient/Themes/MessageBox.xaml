@@ -1,10 +1,13 @@
 ﻿ <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
 
     <Style TargetType="TextBox"  x:Key="MessageBox">
         <Setter Property="Foreground" Value="Gray"/>
         <Setter Property="FontWeight" Value="Medium"/>
         <Setter Property="Margin" Value="8"/>
+
 
 
         <Setter Property="Template">
@@ -26,10 +29,9 @@
                                      Margin="8,0,0,0"
                                      Text="{Binding Message, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                                 <TextBox.InputBindings>
-                                    <KeyBinding Command="{Binding SendCommand}" Key="Return"/>
+                                    <KeyBinding Command="{Binding SendMessage}" Key="Return"/>
                                 </TextBox.InputBindings>
                             </TextBox>
-
 
                             <TextBlock IsHitTestVisible="False"
                                        Text="@Message"

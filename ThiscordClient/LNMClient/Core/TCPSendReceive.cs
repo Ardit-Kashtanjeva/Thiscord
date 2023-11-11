@@ -13,7 +13,7 @@ namespace LNMClient.Core;
 public class TCPSendReceive
 {
     public IServer _server;
-    private Client _client = new();
+    public Client _client = new();
     public static TcpClient _tcpClient;
     public static TCPSendReceive instance;
 
@@ -57,14 +57,41 @@ public class TCPSendReceive
         while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
         {
             string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-            var message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
+            var message = System.Text.Json.JsonSerializer.Deserialize<TCPMessage>(receivedMessage);
 
-            if (message.MethodName == "AddToChat")
-            {
-                message.Parameters[1] = Guid.Parse(message.Parameters[1].ToString());
-            }
-
-            _client.GetType().GetMethod(message.MethodName).Invoke(_client, message.Parameters);
+            CallMethod(receivedMessage);
         }
+    }
+
+    public void CallMethod(string incomingMessage)
+    {
+        var message = System.Text.Json.JsonSerializer.Deserialize<RcpMessage>(incomingMessage);
+
+        if (message == null)
+            return;
+
+        var method = _client.GetType().GetMethod(message.MethodName);
+
+        if (method == null)
+            return;
+
+        var methodParameters = method.GetParameters();
+        var parameters = new object[methodParameters.Length];
+
+        for (var i = 0; i < method.GetParameters().Length; i++)
+        {
+            var parameterType = methodParameters[i].ParameterType;
+            var jsonElement = message.Parameters[i];
+
+            var parameter = jsonElement.Deserialize(parameterType);
+
+            if (parameter is null)
+                continue;
+
+            parameters[i] = parameter;
+        }
+
+        method.Invoke(_client, parameters);
+
     }
 }

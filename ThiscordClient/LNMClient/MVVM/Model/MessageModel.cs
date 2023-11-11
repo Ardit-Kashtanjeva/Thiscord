@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace LNMClient.MVVM.Model
 {
-    internal class MessageModel
+    public class MessageModel
     {
         public string Username { get; set; }
         public string UsernameColor { get; set; }
         public string ImageSource { get; set;}
         public string Message { get; set;}
-        public Guid TargetChat { get; set;}
         public DateTime Time { get; set;}
     }
 }

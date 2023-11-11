@@ -18,11 +18,8 @@ namespace LNMClient
         public MainWindow()
         {
             InitializeComponent();
-
-            MainViewModel sharedViewModel = MainViewModel.Instance;
-
-            DataContext = sharedViewModel;
         }
+
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -35,19 +32,15 @@ namespace LNMClient
 
         private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+            TCPSendReceive tcpSendReceive = TCPSendReceive.instance;
+            tcpSendReceive._client.MinimizeWindow();
         }
 
         private void WindowStateButton_Click(object sender, RoutedEventArgs e)
         {
-            if (Application.Current.MainWindow.WindowState != WindowState.Maximized)
-            {
-                Application.Current.MainWindow.WindowState = WindowState.Maximized;
-            }
-            else
-            {
-                Application.Current.MainWindow.WindowState = WindowState.Normal;
-            }
+
+            TCPSendReceive tcpSendReceive = TCPSendReceive.instance;
+            tcpSendReceive._client.MaximizeWindow();
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
@@ -59,23 +52,6 @@ namespace LNMClient
         {
             ChatCreateScreen chatCreateScreen = new();
             chatCreateScreen.Show();
-        }
-
-        private void UIElement_OnKeyDown(object sender, KeyEventArgs e)
-        {
-            if (MainViewModel.Instance.SelectedContact != null)
-            {
-                if (e.Key == Key.Enter)
-                {
-                    var selectedContact = MainViewModel.Instance.SelectedContact;
-                    TextBox textBox = (TextBox)sender;
-                    TCPSendReceive _tcpSendReceive = TCPSendReceive.instance;
-
-
-                    _tcpSendReceive._server.SendMessage(textBox.Text, selectedContact.ChatGuid);
-                    textBox.Text = "";
-                }
-            }
         }
     }
 }

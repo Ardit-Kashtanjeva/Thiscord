@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
+using System.Text.Json;
+using LNMClient.MVVM.Model;
 
 
 namespace LNMShared
@@ -11,7 +13,7 @@ namespace LNMShared
 
     public interface IServer
     {
-        public void SendMessage(string message, Guid chatGuidId);
+        public void SendMessage(MessageModel message, Guid chatGuidId);
 
         public void CreateChat(string chatName, string[] userNames);
 
@@ -26,11 +28,11 @@ namespace LNMShared
 
     public interface IClient
     {
-        public void ReceiveMessage(string message, Guid chatGuid);
+        public void ReceiveMessage(MessageModel message, Guid chatGuid);
 
         public void AddToChat(string chatName, Guid chatGuid);
 
-        public void GetSignedIn();
+        public void GetSignedIn(string username);
     }
 
     public class TCPMessage
@@ -38,6 +40,12 @@ namespace LNMShared
         public string MethodName { get; set; }
         public object[] Parameters { get; set; }
 
+    }
+
+    public class RcpMessage
+    {
+        public string MethodName { get; set; }
+        public JsonElement[] Parameters { get; set; }
     }
     
 }

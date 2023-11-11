@@ -1,0 +1,12 @@
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\bin\Release\net7.0\ThiscordShared.deps.json
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\bin\Release\net7.0\ThiscordShared.dll
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\bin\Release\net7.0\ThiscordShared.pdb
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ThiscordShared.csproj.AssemblyReference.cache
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ThiscordShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ThiscordShared.AssemblyInfoInputs.cache
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ThiscordShared.AssemblyInfo.cs
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ThiscordShared.csproj.CoreCompileInputs.cache
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ThiscordShared.dll
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\refint\ThiscordShared.dll
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ThiscordShared.pdb
+C:\CMI-GitHub\Schulprojekt-Thiscord\LNM-Exclusive\ThiscordBackend\ThiscordShared\obj\Release\net7.0\ref\ThiscordShared.dll

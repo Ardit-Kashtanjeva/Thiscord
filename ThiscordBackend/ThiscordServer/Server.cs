@@ -8,7 +8,7 @@ public class Server : IServer
     public List<User> Users = new();
     public List<Chat> Chats = new();
     
-    public void SendMessage(string message, Guid chatGuidId)
+    public void SendMessage(MessageModel message, Guid chatGuidId)
     {
         var targetChat = Chats.FirstOrDefault(x => x.Guid == chatGuidId);
         if (targetChat == null)
@@ -79,7 +79,7 @@ public class Server : IServer
         if (user.UserPassword == userPassword)
         {
             user.ConnectedClients.Add(ServerTcp.CurrentClient);
-            ServerTcp.CurrentClient.Client.GetSignedIn();
+            ServerTcp.CurrentClient.Client.GetSignedIn(userName);
         }
     }   
 }

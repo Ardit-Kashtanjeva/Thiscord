@@ -23,14 +23,30 @@ public class ServerInterceptor : IInterceptor
 
     private void SendOverTcp(string methodName, params object[] parameters)
     {
-        var str = JsonConvert.SerializeObject(new TCPMessage
+        if (methodName == "SignIn")
         {
-            MethodName = methodName,
-            Parameters = parameters
-        });
-        byte[] data = Encoding.UTF8.GetBytes(str);
-        NetworkStream stream = _tcpClient.GetStream();
-        stream.Write(data, 0, data.Length);
-        stream.Flush();
+            var str = JsonConvert.SerializeObject(new TCPMessage
+            {
+                MethodName = methodName,
+                Parameters = parameters
+            });
+            byte[] data = Encoding.UTF8.GetBytes(str);
+            NetworkStream stream = _tcpClient.GetStream();
+            stream.Write(data, 0, data.Length);
+            stream.Flush();
+        }
+        else
+        {
+            var str = System.Text.Json.JsonSerializer.Serialize(new TCPMessage
+            {
+                MethodName = methodName,
+                Parameters = parameters
+            });
+            byte[] data = Encoding.UTF8.GetBytes(str);
+            NetworkStream stream = _tcpClient.GetStream();
+            stream.Write(data, 0, data.Length);
+            stream.Flush();
+        }
+        
     }
 }
