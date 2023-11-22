@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThiscordClient", "ThiscordClient\ThiscordClient.csproj", "{23831FDE-89A7-4E08-B6B8-48F786ACC7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThiscordServer", "ThiscordServer\ThiscordServer.csproj", "{2CFC5ED8-2491-4F8E-925A-9F936D4976B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThiscordShared", "ThiscordShared\ThiscordShared.csproj", "{0AB35CDB-A793-4EBF-8C02-02067C9C047D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23831FDE-89A7-4E08-B6B8-48F786ACC7EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23831FDE-89A7-4E08-B6B8-48F786ACC7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23831FDE-89A7-4E08-B6B8-48F786ACC7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23831FDE-89A7-4E08-B6B8-48F786ACC7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CFC5ED8-2491-4F8E-925A-9F936D4976B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CFC5ED8-2491-4F8E-925A-9F936D4976B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CFC5ED8-2491-4F8E-925A-9F936D4976B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CFC5ED8-2491-4F8E-925A-9F936D4976B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB35CDB-A793-4EBF-8C02-02067C9C047D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB35CDB-A793-4EBF-8C02-02067C9C047D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB35CDB-A793-4EBF-8C02-02067C9C047D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB35CDB-A793-4EBF-8C02-02067C9C047D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
