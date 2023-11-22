@@ -3,17 +3,18 @@ using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
 using Castle.DynamicProxy;
-using LNMShared;
-using Newtonsoft.Json;
+using ThiscordShared;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
-namespace LNMServer;
+namespace ThiscordServer;
 
 public class ServerTcp
 {
     private readonly TcpListener _tcpListener = new(IPAddress.Any, 12345);
     private readonly List<UserClient> _clients = new();
     private readonly Server _server = new();
+    public static UserClient CurrentClient;
+
 
     public async Task ListenForClientsAsync()
     {
@@ -38,7 +39,6 @@ public class ServerTcp
         }
     }
 
-    public static UserClient CurrentClient;
 
     private void HandleTargetMessages(UserClient userClient)
     {
@@ -51,17 +51,6 @@ public class ServerTcp
             while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
             {
                 string receivedMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-
-                var message = new TCPMessage();
-                
-                try
-                {
-                    message = JsonConvert.DeserializeObject<TCPMessage>(receivedMessage);
-                }
-                catch
-                {
-                    
-                } 
             
                 CurrentClient = userClient;
 
@@ -74,7 +63,7 @@ public class ServerTcp
         }
         catch (Exception e)
         {
-            
+            throw new Exception();
         }
     }
 

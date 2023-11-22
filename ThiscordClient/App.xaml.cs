@@ -1,4 +1,4 @@
-﻿using LNMClient.Core;
+﻿using ThiscordClient.Core;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -8,7 +8,7 @@ using System.Net.Sockets;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LNMClient
+namespace ThiscordClient
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -1,13 +1,13 @@
-﻿using LNMShared;
+﻿using ThiscordShared;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Documents;
-using LNMClient.MVVM.ViewModel;
-using LNMClient.MVVM.Model;
+using ThiscordClient.MVVM.Model;
+using ThiscordClient.MVVM.ViewModel;
 
-namespace LNMClient.Core
+namespace ThiscordClient.Core
 {
     public class Client : IClient
     {

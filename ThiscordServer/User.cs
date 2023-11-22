@@ -1,6 +1,6 @@
 ﻿using System.Net.Sockets;
 
-namespace LNMServer;
+namespace ThiscordServer;
 
 public class User
 {

@@ -1,4 +1,4 @@
-﻿<Window x:Class="LNMClient.LoginScreen"
+﻿<Window x:Class="ThiscordClient.LoginScreen"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Login" Height="319" Width="300" FontSize="14" Background="#36393F"

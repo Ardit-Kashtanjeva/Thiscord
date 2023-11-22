@@ -2,10 +2,9 @@
 using System.Text;
 using System.Text.Json;
 using Castle.DynamicProxy;
-using LNMShared;
-using Newtonsoft.Json;
+using ThiscordShared;
 
-namespace LNMServer;
+namespace ThiscordServer;
 
 public class Clientinterceptor : IInterceptor
 {
@@ -20,7 +19,7 @@ public class Clientinterceptor : IInterceptor
     {
         if (_tcpClient.Connected)
         {
-            var str = JsonConvert.SerializeObject(new TCPMessage
+            var str = JsonSerializer.Serialize(new TCPMessage
             {
                 MethodName = invocation.Method.Name,
                 Parameters = invocation.Arguments

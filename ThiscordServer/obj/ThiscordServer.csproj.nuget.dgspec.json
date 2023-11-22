@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordServer\\ThiscordServer.csproj": {}
+    "E:\\Repos\\Thiscord\\ThiscordServer\\ThiscordServer.csproj": {}
   },
   "projects": {
-    "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordServer\\ThiscordServer.csproj": {
+    "E:\\Repos\\Thiscord\\ThiscordServer\\ThiscordServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordServer\\ThiscordServer.csproj",
+        "projectUniqueName": "E:\\Repos\\Thiscord\\ThiscordServer\\ThiscordServer.csproj",
         "projectName": "ThiscordServer",
-        "projectPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordServer\\ThiscordServer.csproj",
-        "packagesPath": "C:\\Users\\AKA\\.nuget\\packages\\",
-        "outputPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordServer\\obj\\",
+        "projectPath": "E:\\Repos\\Thiscord\\ThiscordServer\\ThiscordServer.csproj",
+        "packagesPath": "C:\\Users\\ardit\\.nuget\\packages\\",
+        "outputPath": "E:\\Repos\\Thiscord\\ThiscordServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Visual Studio Stamminstalation\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AKA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ardit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,16 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/NVDrFnaYAHV25yVToaBJTt1KdROnlwk1iek9iCmytJkVXJzzzF/api": {},
-          "https://nuget.pkg.github.com/CMInformatik/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordShared\\ThiscordShared.csproj": {
-                "projectPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordShared\\ThiscordShared.csproj"
+              "E:\\Repos\\Thiscord\\ThiscordShared\\ThiscordShared.csproj": {
+                "projectPath": "E:\\Repos\\Thiscord\\ThiscordShared\\ThiscordShared.csproj"
               }
             }
           }
@@ -49,12 +48,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -71,24 +64,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordShared\\ThiscordShared.csproj": {
+    "E:\\Repos\\Thiscord\\ThiscordShared\\ThiscordShared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordShared\\ThiscordShared.csproj",
+        "projectUniqueName": "E:\\Repos\\Thiscord\\ThiscordShared\\ThiscordShared.csproj",
         "projectName": "ThiscordShared",
-        "projectPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordShared\\ThiscordShared.csproj",
-        "packagesPath": "C:\\Users\\AKA\\.nuget\\packages\\",
-        "outputPath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordShared\\obj\\",
+        "projectPath": "E:\\Repos\\Thiscord\\ThiscordShared\\ThiscordShared.csproj",
+        "packagesPath": "C:\\Users\\ardit\\.nuget\\packages\\",
+        "outputPath": "E:\\Repos\\Thiscord\\ThiscordShared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\Visual Studio Stamminstalation\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AKA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ardit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,9 +90,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/NVDrFnaYAHV25yVToaBJTt1KdROnlwk1iek9iCmytJkVXJzzzF/api": {},
-          "https://nuget.pkg.github.com/CMInformatik/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -138,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,7 +1,7 @@
 ﻿using System.Net.Sockets;
-using LNMShared;
+using ThiscordShared;
 
-namespace LNMServer;
+namespace ThiscordServer;
 
 public class Server : IServer
 {

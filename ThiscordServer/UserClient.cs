@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using LNMShared;
+using ThiscordShared;
 
-namespace LNMServer;
+namespace ThiscordServer;
 
 public class UserClient
 {

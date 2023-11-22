@@ -2,10 +2,9 @@
 using System.Text;
 using System.Text.Json;
 using Castle.DynamicProxy;
-using LNMShared;
-using Newtonsoft.Json;
+using ThiscordShared;
 
-namespace LNMClient.Core;
+namespace ThiscordClient.Core;
 
 public class ServerInterceptor : IInterceptor
 {
@@ -25,7 +24,7 @@ public class ServerInterceptor : IInterceptor
     {
         if (methodName == "SignIn")
         {
-            var str = JsonConvert.SerializeObject(new TCPMessage
+            var str = JsonSerializer.Serialize(new TCPMessage
             {
                 MethodName = methodName,
                 Parameters = parameters
@@ -37,7 +36,7 @@ public class ServerInterceptor : IInterceptor
         }
         else
         {
-            var str = System.Text.Json.JsonSerializer.Serialize(new TCPMessage
+            var str = JsonSerializer.Serialize(new TCPMessage
             {
                 MethodName = methodName,
                 Parameters = parameters

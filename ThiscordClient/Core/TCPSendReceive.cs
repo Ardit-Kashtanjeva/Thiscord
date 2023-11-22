@@ -4,11 +4,10 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System;
-using LNMShared;
+using ThiscordShared;
 using System.Text.Json;
-using Newtonsoft.Json;
 
-namespace LNMClient.Core;
+namespace ThiscordClient.Core;
 
 public class TCPSendReceive
 {

@@ -1,15 +1,15 @@
-﻿using LNMClient.MVVM.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-using LNMClient.Core;
 using System.Windows;
-using LNMShared;
+using ThiscordClient.Core;
+using ThiscordClient.MVVM.Model;
+using ThiscordShared;
 
 
-namespace LNMClient.MVVM.ViewModel
+namespace ThiscordClient.MVVM.ViewModel
 {
     internal class MainViewModel : ObservableObject
     {

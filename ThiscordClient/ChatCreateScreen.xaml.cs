@@ -3,10 +3,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
-using LNMClient.Core;
-using LNMClient.MVVM.ViewModel;
+using ThiscordClient.MVVM.ViewModel;
+using ThiscordClient.Core;
 
-namespace LNMClient
+namespace ThiscordClient
 {
     /// <summary>
     /// Interaction logic for UserAddScreen.xaml

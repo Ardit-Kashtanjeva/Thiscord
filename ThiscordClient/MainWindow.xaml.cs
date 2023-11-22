@@ -4,10 +4,10 @@ using System.Windows.Input;
 using System.Net.Sockets;
 using System.Windows.Controls;
 using System.Windows.Media.TextFormatting;
-using LNMClient.Core;
-using LNMClient.MVVM.ViewModel;
+using ThiscordClient.MVVM.ViewModel;
+using ThiscordClient.Core;
 
-namespace LNMClient
+namespace ThiscordClient
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

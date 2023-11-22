@@ -1,7 +1,7 @@
 ﻿using System.Net.Sockets;
 using System.Text.Json;
 
-namespace LNMShared;
+namespace ThiscordShared;
 
 
 public interface IServer

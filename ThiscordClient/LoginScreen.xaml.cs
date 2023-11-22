@@ -1,10 +1,10 @@
-﻿using LNMClient.Core;
-using LNMShared;
+﻿using ThiscordShared;
 using System.Net.Sockets;
 using System.Windows;
-using LNMClient.MVVM.ViewModel;
+using ThiscordClient.MVVM.ViewModel;
+using ThiscordClient.Core;
 
-namespace LNMClient
+namespace ThiscordClient
 {
     /// <summary>
     /// Interaction logic for LoginScreen.xaml

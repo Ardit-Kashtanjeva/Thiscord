@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Linq;
-using LNMShared;
+using ThiscordShared;
 
-namespace LNMClient.MVVM.Model
+namespace ThiscordClient.MVVM.Model
 {
     internal class ContactModel
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace LNMClient.Core
+namespace ThiscordClient.Core
 {
     class RelayCommand : ICommand
     {

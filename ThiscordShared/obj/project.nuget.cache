@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "XgyJcAGMq4YvJEDgWlyYaq7gANRlhn3AW3HUnNt83hjLVE/GxOw5kC4j+Xi3Y5m0YkKOB/Rtq4eTT5wjBsF4rA==",
+  "dgSpecHash": "1EbODPRfYAAAQrS04GLvyoziddxX/Qx9BVyTpMPwzWmrlzMA3WMy6i0bqzXIiCS96r43YVGbXQXIfP3KYHhOTg==",
   "success": true,
-  "projectFilePath": "C:\\CMI-GitHub\\Schulprojekt-Thiscord\\LNM-Exclusive\\ThiscordShared\\ThiscordShared.csproj",
+  "projectFilePath": "E:\\Repos\\Thiscord\\ThiscordShared\\ThiscordShared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\AKA\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
-    "C:\\Users\\AKA\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    "C:\\Users\\ardit\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\ardit\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
