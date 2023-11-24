@@ -66,7 +66,6 @@ public class Server : IServer
             UserName = userName,
             UserPassword = userPassword
         }); 
-        
     }
 
     public void SignIn(string userName, string userPassword)
