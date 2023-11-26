@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using ThiscordClient.Core;
 using ThiscordClient.MVVM.Model;
@@ -11,17 +11,15 @@ using ThiscordShared;
 
 namespace ThiscordClient.MVVM.ViewModel
 {
-    internal class MainViewModel : ObservableObject
+    public class MainViewModel : INotifyPropertyChanged
     {
-
-        private static MainViewModel instance;
-        public MessageModel ClientMessageModel { get; set; }
         public ObservableCollection<MessageModel> Messages { get; set; }
-        public ObservableCollection<ContactModel> Contacts { get; set; }
+        
         public RelayCommand SendMessage { get; set; }
 
-
-        private ContactModel _selectedContact;
+        public string _message;
+        
+        ContactModel _selectedContact;
 
         public ContactModel SelectedContact
         {
@@ -33,9 +31,6 @@ namespace ThiscordClient.MVVM.ViewModel
             }
         }
         
-
-        public string _message;
-
         public string Message
         {
             get { return _message; }
@@ -46,36 +41,19 @@ namespace ThiscordClient.MVVM.ViewModel
             }
         }
 
-        public static MainViewModel Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new MainViewModel();
-                }
-                return instance;
-            }
-        }
-
-        private MainViewModel()
+        public MainViewModel(TCPSendReceive tcpSendReceive, Storage storage, IServer server)
         {
             Messages = new ObservableCollection<MessageModel>();
-            Contacts = new ObservableCollection<ContactModel>();
 
             SendMessage = new RelayCommand(o =>
             {
                 if (SelectedContact == null)
                     return;
 
-                var selectedContact = Instance.SelectedContact;
-                TCPSendReceive _tcpSendReceive = TCPSendReceive.instance;
-                MainViewModel mainViewModel = Instance;
+                storage.ClientMessageModel.Message = Message;
+                storage.ClientMessageModel.Time = DateTime.Now;
 
-                mainViewModel.ClientMessageModel.Message = Message;
-                mainViewModel.ClientMessageModel.Time = DateTime.Now;
-
-                _tcpSendReceive._server.SendMessage(mainViewModel.ClientMessageModel, selectedContact.ChatGuid);
+                server.SendMessage(storage.ClientMessageModel, SelectedContact.ChatGuid);
                 Message = "";
             });
         }
@@ -84,14 +62,21 @@ namespace ThiscordClient.MVVM.ViewModel
         {
             Messages.Add(message);
         }
+       
 
-        public void AddContact(ContactModel contact)
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
         {
-            Application.Current.Dispatcher.Invoke(() =>
-            {
-                Contacts.Add(contact);
-            });
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        protected bool SetField<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
+        {
+            if (EqualityComparer<T>.Default.Equals(field, value)) return false;
+            field = value;
+            OnPropertyChanged(propertyName);
+            return true;
+        }
     }
 }

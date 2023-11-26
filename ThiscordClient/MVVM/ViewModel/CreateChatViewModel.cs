@@ -3,20 +3,18 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Windows;
-using System.Windows.Input;
 using ThiscordClient.Core;
+using ThiscordShared;
 
 namespace ThiscordClient.MVVM.ViewModel;
 
 public class CreateChatViewModel : INotifyPropertyChanged
 {
-   
+    private readonly TCPSendReceive _tcpSendReceive;
+
     private string _chatName;
     
     private string _username;
-    
-    public TCPSendReceive TcpSendReceive = TCPSendReceive.instance;
     
     private ObservableCollection<string> _usernameList;
     public RelayCommand AddUsernameToListCommand { get; set; }
@@ -55,8 +53,9 @@ public class CreateChatViewModel : INotifyPropertyChanged
         }
     }
 
-    public CreateChatViewModel()
+    public CreateChatViewModel(TCPSendReceive tcpSendReceive, IServer server)
     {
+        _tcpSendReceive = tcpSendReceive;
         AddUsernameToListCommand = new RelayCommand(o =>
         {
             UsernameList.Add(Username);
@@ -65,7 +64,7 @@ public class CreateChatViewModel : INotifyPropertyChanged
         
         CreateChatCommand = new RelayCommand(o =>
         {
-            TcpSendReceive._server.CreateChat(ChatName, UsernameList.ToArray());
+            server.CreateChat(ChatName, UsernameList.ToArray());
         });
     }
     

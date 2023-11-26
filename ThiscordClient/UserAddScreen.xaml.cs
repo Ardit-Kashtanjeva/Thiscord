@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
 using ThiscordClient.Core;
+using ThiscordShared;
 
 namespace ThiscordClient
 {
@@ -11,13 +12,15 @@ namespace ThiscordClient
     /// </summary>
     public partial class UserAddScreen : Window
     {
+        private readonly IServer _server;
         public string chatName { get; set; }
         public Guid ChatGuid { get; set; }
-        public TCPSendReceive TcpSendReceive = TCPSendReceive.instance;
+        
         public ObservableCollection<string>UsernameList = new();
 
-        public UserAddScreen()
+        public UserAddScreen(IServer server)
         {
+            _server = server;
             InitializeComponent();
         }
 
@@ -33,7 +36,7 @@ namespace ThiscordClient
         {
             foreach (var username in UsernameList)
             {
-                TcpSendReceive._server.AddChatMember(username, chatName, ChatGuid);
+                _server.AddChatMember(username, chatName, ChatGuid);
             }
         }
     }

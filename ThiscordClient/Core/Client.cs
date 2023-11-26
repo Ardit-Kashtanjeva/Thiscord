@@ -10,30 +10,21 @@ namespace ThiscordClient.Core
 {
     public class Client : IClient
     {
-        Window logInWindow = Application.Current.MainWindow;
-        MainWindow mainWindow = new();
-        MainViewModel mainViewModel = MainViewModel.Instance;
+        private Window _logInWindow;
+        private MainWindow _mainWindow;
+        private readonly Storage _storage;
+        private MainViewModel _mainViewModel;
 
-        public void MinimizeWindow()
+        public Client(MainWindow mainWindow, Storage storage, LoginScreen loginScreen)
         {
-            mainWindow.WindowState = WindowState.Minimized;
-        }
-
-        public void MaximizeWindow()
-        {
-            if (mainWindow.WindowState != WindowState.Maximized)
-            {
-                mainWindow.WindowState = WindowState.Maximized;
-            }
-            else
-            {
-                mainWindow.WindowState = WindowState.Normal;
-            }
+            _mainWindow = mainWindow;
+            _storage = storage;
+            _logInWindow = loginScreen;
         }
 
         public void AddToChat(string chatName, Guid chatGuid)
         {
-            mainViewModel.AddContact(
+            _storage.AddContact(
                 (new ContactModel
                 {
                     Chatname = chatName,
@@ -44,8 +35,7 @@ namespace ThiscordClient.Core
 
         public void GetSignedIn(string username)
         {
-            MainViewModel mainViewModel = MainViewModel.Instance;
-            mainViewModel.ClientMessageModel = ( new MessageModel
+            _storage.ClientMessageModel = ( new MessageModel
             {
                 Username = username,
                 UsernameColor = "#3bff6f",
@@ -56,14 +46,14 @@ namespace ThiscordClient.Core
 
             Application.Current.Dispatcher.Invoke(() =>
             {
-                mainWindow.Show();
-                logInWindow.Close();
+                _mainWindow.Show();
+                _logInWindow.Close();
             });
         }
 
         public void ReceiveMessage(MessageModel message, Guid chatGuid)
         {
-                var contactModel = mainViewModel.Contacts.FirstOrDefault(x => x.ChatGuid == chatGuid);
+                var contactModel = _storage.Contacts.FirstOrDefault(x => x.ChatGuid == chatGuid);
 
                 if (contactModel == null)
                 {

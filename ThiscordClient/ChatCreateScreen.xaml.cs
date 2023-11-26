@@ -12,14 +12,10 @@ namespace ThiscordClient
     /// </summary>
     public partial class ChatCreateScreen : Window
     {
-        public string ChatName { get; set; }
-        public TCPSendReceive TcpSendReceive = TCPSendReceive.instance;
-        public ObservableCollection<string> UsernameList { get; } = new();
-
-        public ChatCreateScreen()
+        public ChatCreateScreen(CreateChatViewModel createChatViewModel)
         {
             InitializeComponent();
-            DataContext = CreateChatViewModel;
+            DataContext = createChatViewModel;
         }
     }
 }

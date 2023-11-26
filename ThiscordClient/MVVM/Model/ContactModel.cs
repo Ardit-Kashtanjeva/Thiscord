@@ -5,7 +5,7 @@ using ThiscordShared;
 
 namespace ThiscordClient.MVVM.Model
 {
-    internal class ContactModel
+    public class ContactModel
     {
         public string Chatname { get; set; }
         public Guid ChatGuid { get; set; }

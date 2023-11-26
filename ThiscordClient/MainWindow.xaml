@@ -10,8 +10,7 @@
         Background="#36393F"
         WindowStyle="None"
         AllowsTransparency="True"
-        ResizeMode="CanResizeWithGrip"
-        DataContext="{x:Static viewModel:MainViewModel.Instance}">
+        ResizeMode="CanResizeWithGrip">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -166,8 +165,7 @@
                 <TextBox Grid.Row="1"
                          Height="50"
                          Text="Message @Username"
-                         Style="{StaticResource MessageBox}"
-                         DataContext="{x:Static viewModel:MainViewModel.Instance}"/>
+                         Style="{StaticResource MessageBox}"/>
 
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"
