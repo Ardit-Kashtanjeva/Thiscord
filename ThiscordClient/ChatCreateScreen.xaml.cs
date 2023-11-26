@@ -21,19 +21,5 @@ namespace ThiscordClient
             InitializeComponent();
             DataContext = CreateChatViewModel;
         }
-
-        private void TxtUsername_OnKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-                UsernameList.Add(txtUsername.Text);
-            }
-        }
-
-        private void BtnSubmit_OnClick(object sender, RoutedEventArgs e)
-        {
-            Close();
-            TcpSendReceive._server.CreateChat(ChatName, UsernameList.ToArray());
-        }
     }
 }
