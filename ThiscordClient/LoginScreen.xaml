@@ -17,6 +17,7 @@
                 <Button Name="btnSubmit" Click="btnSubmit_Click" Content="Submit" Margin="115,10,5,10" Background="#545d6a" Foreground="Gray" FontSize="18"/>
                 <Button Name="btnSignUp" Click="btnSignUp_Click" Content="Sign Up" Margin="5,10,115,10" Background="#545d6a" Foreground="Gray" FontSize="18"/>
             </Grid>
+            <Label Height="20" Width="200" Margin="0,10,0,0" Content="{Binding }"/>
         </StackPanel>
     </Border>
 </Window>

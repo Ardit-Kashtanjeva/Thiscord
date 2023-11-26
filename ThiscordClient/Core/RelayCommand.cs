@@ -23,7 +23,7 @@ namespace ThiscordClient.Core
 
         public bool CanExecute(object parameter)
         {
-            return this.canExecute == null || this.CanExecute(parameter);
+            return canExecute == null || this.CanExecute(parameter);
         }
 
         public void Execute(object parameter)

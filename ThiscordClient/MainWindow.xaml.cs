@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Input;
 using System.Net.Sockets;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Media.TextFormatting;
 using ThiscordClient.MVVM.ViewModel;
 using ThiscordClient.Core;
@@ -27,7 +29,6 @@ namespace ThiscordClient
             {
                 DragMove();
             }
-
         }
 
         private void ButtonMinimize_Click(object sender, RoutedEventArgs e)

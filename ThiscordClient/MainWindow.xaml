@@ -89,7 +89,7 @@
                            Foreground="Gray" VerticalAlignment="Center"
                            FontWeight="SemiBold">
                     </Label>
-                    <Button Width="20" Height="20" Background="Transparent" BorderThickness="0" FontWeight="Bold" Click="ButtonBase_OnClick">
+                    <Button Width="20" Height="20" Background="Transparent" BorderThickness="0" FontWeight="Bold">
                         <Image Source="Icons/plus.png" Visibility="Visible" Stretch="Fill" RenderOptions.BitmapScalingMode="Fant"/>
                     </Button>
                 </StackPanel>

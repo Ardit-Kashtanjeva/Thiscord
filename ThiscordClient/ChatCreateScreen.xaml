@@ -15,7 +15,7 @@
                 <Label Content="Create Chat" Foreground="Gray" FontSize="25" HorizontalAlignment="Center"/>
                 <Separator></Separator>
                 <Label Content="Chatname" Foreground="Gray"/>
-                <TextBox Name="txtChatName" Background="#545d6a" Foreground="White" FontSize="18" KeyDown="TxtUsername_OnKeyDown" BorderThickness="0"/>
+                <TextBox Name="txtChatName" Background="#545d6a" Foreground="White" FontSize="18" Text="{Binding ChatName}" BorderThickness="0"/>
                 <Label Content="Username" Foreground="Gray"/>
                 <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" FontSize="18" KeyDown="TxtUsername_OnKeyDown" BorderThickness="0"/>
 
