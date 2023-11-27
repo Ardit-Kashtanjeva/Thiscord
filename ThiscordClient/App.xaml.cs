@@ -1,16 +1,8 @@
 ﻿using ThiscordClient.Core;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Configuration;
-using System.Data;
-using System.Linq;
 using System.Net.Sockets;
-using System.Threading.Tasks;
 using System.Windows;
 using Castle.DynamicProxy;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using ThiscordClient.MVVM.Model;
 using ThiscordClient.MVVM.ViewModel;
 using ThiscordShared;

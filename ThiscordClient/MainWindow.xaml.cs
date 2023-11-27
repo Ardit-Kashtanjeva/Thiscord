@@ -2,7 +2,6 @@
 using System.Windows;
 using System.Windows.Input;
 using Microsoft.Extensions.DependencyInjection;
-using ThiscordClient.Core;
 
 namespace ThiscordClient
 {

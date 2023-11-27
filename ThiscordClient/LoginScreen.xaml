@@ -13,8 +13,8 @@
             <Label Content="Password" Foreground="Gray"/>
             <TextBox Text="{Binding Password}" Background="#545d6a" Foreground="Gray" FontSize="18" BorderThickness="0"/>
             <Grid>
-                <Button Command="{Binding SignIn}" Content="Submit" Margin="115,10,5,10" Background="#545d6a" Foreground="Gray" FontSize="18"/>
-                <Button Command="{Binding SignUp}" Content="Sign Up" Margin="5,10,115,10" Background="#545d6a" Foreground="Gray" FontSize="18"/>
+                <Button Command="{Binding SignInCommand}" Content="Submit" Margin="115,10,5,10" Background="#545d6a" Foreground="Gray" FontSize="18"/>
+                <Button Command="{Binding SignUpCommand}" Content="Sign Up" Margin="5,10,115,10" Background="#545d6a" Foreground="Gray" FontSize="18"/>
             </Grid>
             <Label Height="20" Width="200" Margin="0,10,0,0"/>
         </StackPanel>
