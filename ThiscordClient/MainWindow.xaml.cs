@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Input;
 using Microsoft.Extensions.DependencyInjection;
+using ThiscordClient.MVVM.ViewModel;
 
 namespace ThiscordClient
 {
@@ -12,9 +13,10 @@ namespace ThiscordClient
     {
         private readonly IServiceProvider _serviceProvider;
 
-        public MainWindow(IServiceProvider serviceProvider)
+        public MainWindow(IServiceProvider serviceProvider, MainViewModel mainViewModel)
         {
             _serviceProvider = serviceProvider;
+            DataContext = mainViewModel;
             InitializeComponent();
         }
 

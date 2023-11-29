@@ -10,9 +10,7 @@ namespace ThiscordClient.MVVM.ViewModel;
 
 public class CreateChatViewModel : INotifyPropertyChanged
 {
-    private readonly TCPSendReceive _tcpSendReceive;
-
-    private string _chatName;
+    private string _chatname;
     
     private string _username;
     
@@ -20,13 +18,13 @@ public class CreateChatViewModel : INotifyPropertyChanged
     public RelayCommand AddUsernameToListCommand { get; set; }
     public RelayCommand CreateChatCommand { get; set; }
     
-    public string ChatName
+    public string Chatname
     {
-        get => _chatName;
+        get => _chatname;
         set
         {
-            if (value == _chatName) return;
-            _chatName = value;
+            if (value == _chatname) return;
+            _chatname = value;
             OnPropertyChanged();
         }
     }
@@ -47,15 +45,15 @@ public class CreateChatViewModel : INotifyPropertyChanged
         get => _usernameList;
         set
         {
-            if (Equals(value, _usernameList)) return;
             _usernameList = value;
             OnPropertyChanged();
         }
     }
 
-    public CreateChatViewModel(TCPSendReceive tcpSendReceive, IServer server)
+    public CreateChatViewModel(IServer server)
     {
-        _tcpSendReceive = tcpSendReceive;
+        _usernameList = new();
+        
         AddUsernameToListCommand = new RelayCommand(o =>
         {
             UsernameList.Add(Username);
@@ -64,7 +62,7 @@ public class CreateChatViewModel : INotifyPropertyChanged
         
         CreateChatCommand = new RelayCommand(o =>
         {
-            server.CreateChat(ChatName, UsernameList.ToArray());
+            server.CreateChat(Chatname, UsernameList.ToArray());
         });
     }
     

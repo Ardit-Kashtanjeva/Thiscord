@@ -15,10 +15,10 @@
                 <Label Content="Create Chat" Foreground="Gray" FontSize="25" HorizontalAlignment="Center"/>
                 <Separator/>
                 <Label Content="Chatname" Foreground="Gray"/>
-                <TextBox Background="#545d6a" Foreground="White" FontSize="18" Text="{Binding ChatName}" BorderThickness="0"/>
+                <TextBox Background="#545d6a" Foreground="White" FontSize="18" Text="{Binding Chatname}" BorderThickness="0"/>
                 <Label Content="Username" Foreground="Gray"/>
                 
-                <TextBox Background="#545d6a" Foreground="White" FontSize="18" Text="{Binding UserName}" BorderThickness="0">
+                <TextBox Background="#545d6a" Foreground="White" FontSize="18" Text="{Binding Username}" BorderThickness="0">
                     <TextBox.InputBindings>
                         <KeyBinding Gesture="Enter" Command="{Binding AddUsernameToListCommand}"/>
                     </TextBox.InputBindings>

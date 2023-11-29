@@ -41,7 +41,7 @@ namespace ThiscordClient.MVVM.ViewModel
             }
         }
 
-        public MainViewModel(TCPSendReceive tcpSendReceive, Storage storage, IServer server)
+        public MainViewModel(Storage storage, IServer server)
         {
             Messages = new ObservableCollection<MessageModel>();
 

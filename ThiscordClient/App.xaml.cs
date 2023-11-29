@@ -23,10 +23,10 @@ namespace ThiscordClient
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddSingleton<CreateChatViewModel>();
             serviceCollection.AddTransient<ChatCreateScreen>();
-            serviceCollection.AddSingleton<MainWindow>();
             serviceCollection.AddSingleton<MainViewModel>();
-            serviceCollection.AddSingleton<LoginScreen>();
             serviceCollection.AddSingleton<LoginViewModel>();
+            serviceCollection.AddSingleton<MainWindow>();
+            serviceCollection.AddSingleton<LoginScreen>();
             serviceCollection.AddSingleton<TCPSendReceive>();
             serviceCollection.AddSingleton<Client>();
             serviceCollection.AddSingleton<Storage>();
