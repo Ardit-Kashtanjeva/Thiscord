@@ -8,10 +8,10 @@ namespace ThiscordClient
     /// </summary>
     public partial class ChatCreateScreen : Window
     {
-        public ChatCreateScreen(CreateChatViewModel createChatViewModel)
+        public ChatCreateScreen(ChatCreateViewModel chatCreateViewModel)
         {
             InitializeComponent();
-            DataContext = createChatViewModel;
+            DataContext = chatCreateViewModel;
         }
     }
 }

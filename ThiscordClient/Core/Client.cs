@@ -25,24 +25,24 @@ namespace ThiscordClient.Core
         public void AddToChat(string chatName, Guid chatGuid)
         {
             _storage.AddContact(
-                (new ContactModel
+                new ContactModel
                 {
                     Chatname = chatName,
                     ChatGuid = chatGuid,
                     Messages = new ObservableCollection<MessageModel>()
-                }));
+                });
         }
 
         public void GetSignedIn(string username)
         {
-            _storage.ClientMessageModel = ( new MessageModel
+            _storage.ClientMessageModel = new MessageModel
             {
                 Username = username,
                 UsernameColor = "#3bff6f",
-                Message = "",
+                Message = String.Empty,
                 ImageSource = $"https://gravatar.com/avatar/{username}?s=400&d=robohash&r=x",
                 Time = DateTime.Now
-            });
+            };
 
             Application.Current.Dispatcher.Invoke(() =>
             {

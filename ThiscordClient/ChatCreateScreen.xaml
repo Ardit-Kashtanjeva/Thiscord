@@ -12,6 +12,7 @@
     <Grid>
         <Border Background="#2e3137" CornerRadius="20" Margin="20">
             <StackPanel Margin="20">
+
                 <Label Content="Create Chat" Foreground="Gray" FontSize="25" HorizontalAlignment="Center"/>
                 <Separator/>
                 <Label Content="Chatname" Foreground="Gray"/>

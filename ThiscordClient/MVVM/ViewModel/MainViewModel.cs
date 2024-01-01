@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows;
 using ThiscordClient.Core;
 using ThiscordClient.MVVM.Model;
 using ThiscordShared;
@@ -16,6 +15,8 @@ namespace ThiscordClient.MVVM.ViewModel
         public ObservableCollection<MessageModel> Messages { get; set; }
         
         public RelayCommand SendMessage { get; set; }
+        
+        public RelayCommand CreateChat { get; set; }
 
         public string _message;
         
@@ -53,8 +54,14 @@ namespace ThiscordClient.MVVM.ViewModel
                 storage.ClientMessageModel.Message = Message;
                 storage.ClientMessageModel.Time = DateTime.Now;
 
-                server.SendMessage(storage.ClientMessageModel, SelectedContact.ChatGuid);
-                Message = "";
+                server.SendMessage(storage.ClientMessageModel);
+                Message = String.Empty;
+            });
+            
+            CreateChat = new RelayCommand(o =>
+            {
+                ChatCreateScreen chatCreateScreen = new ChatCreateScreen(new ChatCreateViewModel(server));
+                chatCreateScreen.Show();
             });
         }
 

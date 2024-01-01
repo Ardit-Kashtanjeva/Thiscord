@@ -21,13 +21,13 @@ namespace ThiscordClient
         public App()
         {
             var serviceCollection = new ServiceCollection();
-            serviceCollection.AddSingleton<CreateChatViewModel>();
+            serviceCollection.AddSingleton<ChatCreateViewModel>();
             serviceCollection.AddTransient<ChatCreateScreen>();
             serviceCollection.AddSingleton<MainViewModel>();
             serviceCollection.AddSingleton<LoginViewModel>();
             serviceCollection.AddSingleton<MainWindow>();
             serviceCollection.AddSingleton<LoginScreen>();
-            serviceCollection.AddSingleton<TCPSendReceive>();
+            serviceCollection.AddSingleton<TcpSendReceive>();
             serviceCollection.AddSingleton<Client>();
             serviceCollection.AddSingleton<Storage>();
             serviceCollection.AddSingleton<IServer>(s => new ProxyGenerator().CreateInterfaceProxyWithoutTarget<IServer>(s.GetRequiredService<ServerInterceptor>()));
@@ -38,7 +38,7 @@ namespace ThiscordClient
 
         private void OnStartup(object sender, StartupEventArgs e)
         {
-            var tcpSendReceive = _serviceProvider.GetService<TCPSendReceive>();
+            var tcpSendReceive = _serviceProvider.GetService<TcpSendReceive>();
             var mainWindow = _serviceProvider.GetService<LoginScreen>();
             mainWindow.Show();
             tcpSendReceive.ConnectToServer();

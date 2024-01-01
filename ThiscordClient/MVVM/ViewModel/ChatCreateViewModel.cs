@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -8,7 +9,7 @@ using ThiscordShared;
 
 namespace ThiscordClient.MVVM.ViewModel;
 
-public class CreateChatViewModel : INotifyPropertyChanged
+public class ChatCreateViewModel : INotifyPropertyChanged
 {
     private string _chatname;
     
@@ -50,19 +51,22 @@ public class CreateChatViewModel : INotifyPropertyChanged
         }
     }
 
-    public CreateChatViewModel(IServer server)
+    public ChatCreateViewModel(IServer server)
     {
         _usernameList = new();
         
         AddUsernameToListCommand = new RelayCommand(o =>
         {
             UsernameList.Add(Username);
-            Username = "";
+            Username = String.Empty;
         });
         
         CreateChatCommand = new RelayCommand(o =>
         {
             server.CreateChat(Chatname, UsernameList.ToArray());
+            UsernameList.Clear();
+            Username = String.Empty;
+            Chatname = String.Empty;
         });
     }
     

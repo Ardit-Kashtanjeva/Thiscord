@@ -1,5 +1,4 @@
-﻿using Castle.DynamicProxy;
-using System.Net.Sockets;
+﻿using System.Net.Sockets;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +8,7 @@ using System.Text.Json;
 
 namespace ThiscordClient.Core;
 
-public class TCPSendReceive
+public class TcpSendReceive
 {
 
     private Client _client;
@@ -17,7 +16,7 @@ public class TCPSendReceive
     private readonly TcpClient _tcpClient;
     
 
-    public TCPSendReceive(Client client, TcpClient tcpClient)
+    public TcpSendReceive(Client client, TcpClient tcpClient)
     {
         _client = client;
         _tcpClient = tcpClient;

@@ -49,7 +49,6 @@
                                             </DataTrigger>
                                         </Style.Triggers>
                                     </Style>
-
                                 </TextBlock.Style>
                             </TextBlock>
                         </Grid>
@@ -58,7 +57,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-    
-    
-    
  </ResourceDictionary>

@@ -8,9 +8,9 @@ public class Server : IServer
     public List<User> Users = new();
     public List<Chat> Chats = new();
     
-    public void SendMessage(MessageModel message, Guid chatGuidId)
+    public void SendMessage(MessageModel message)
     {
-        var targetChat = Chats.FirstOrDefault(x => x.Guid == chatGuidId);
+        var targetChat = Chats.FirstOrDefault(x => x.Guid == message.TargetChat);
         if (targetChat == null)
         {
             return;
@@ -19,11 +19,11 @@ public class Server : IServer
         {
             foreach (var connectedClient in user.ConnectedClients)
             {
-                connectedClient.Client.ReceiveMessage(message, chatGuidId);
+                connectedClient.Client.ReceiveMessage(message, message.TargetChat);
             }
         }
     }
-    
+
     public void CreateChat(string chatName, string[] userNames)
     {
         Guid tempGuid = new Guid();

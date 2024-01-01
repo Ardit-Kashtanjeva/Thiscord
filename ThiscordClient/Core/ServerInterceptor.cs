@@ -46,6 +46,5 @@ public class ServerInterceptor : IInterceptor
             stream.Write(data, 0, data.Length);
             stream.Flush();
         }
-        
     }
 }
