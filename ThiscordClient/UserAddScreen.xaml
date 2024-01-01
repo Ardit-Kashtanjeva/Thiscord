@@ -16,7 +16,7 @@
                 <Separator></Separator>
                 <Label Content="Username" Foreground="White"/>
                 <TextBox Name="txtUsername" Background="#545d6a" Foreground="White" FontSize="18" KeyDown="TxtUsername_OnKeyDown"/>
-                <ListBox ItemsSource="{Binding UsernameStrings}" BorderBrush="#545d6a" Background="#2e3137" Margin="0,10,0,5" Height="20">
+                <ListBox MinHeight="80" ItemsSource="{Binding UsernameStrings}" BorderBrush="#545d6a" Background="#2e3137" Margin="0,10,0,5" Height="20">
 
                 </ListBox>
                 <Grid>

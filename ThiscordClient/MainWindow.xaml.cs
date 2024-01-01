@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Input;
-using System.Net.Sockets;
-using System.Windows.Controls;
-using System.Windows.Media.TextFormatting;
+using Microsoft.Extensions.DependencyInjection;
 using ThiscordClient.MVVM.ViewModel;
-using ThiscordClient.Core;
 
 namespace ThiscordClient
 {
@@ -14,12 +11,14 @@ namespace ThiscordClient
     /// </summary>
     public partial class MainWindow : Window
     {
-       
-        public MainWindow()
+        private readonly IServiceProvider _serviceProvider;
+
+        public MainWindow(IServiceProvider serviceProvider, MainViewModel mainViewModel)
         {
+            _serviceProvider = serviceProvider;
+            DataContext = mainViewModel;
             InitializeComponent();
         }
-
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -27,30 +26,33 @@ namespace ThiscordClient
             {
                 DragMove();
             }
-
         }
 
         private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
         {
-            TCPSendReceive tcpSendReceive = TCPSendReceive.instance;
-            tcpSendReceive._client.MinimizeWindow();
+            WindowState = WindowState.Minimized;
         }
 
         private void WindowStateButton_Click(object sender, RoutedEventArgs e)
         {
-
-            TCPSendReceive tcpSendReceive = TCPSendReceive.instance;
-            tcpSendReceive._client.MaximizeWindow();
+            if (WindowState != WindowState.Maximized)
+            {
+                WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                WindowState = WindowState.Normal;
+            }
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
-                Application.Current.Shutdown();
+            Application.Current.Shutdown();
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            ChatCreateScreen chatCreateScreen = new();
+            var chatCreateScreen = _serviceProvider.GetRequiredService<ChatCreateScreen>();
             chatCreateScreen.Show();
         }
     }

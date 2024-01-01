@@ -6,17 +6,15 @@ namespace ThiscordShared;
 
 public interface IServer
 {
-    public void SendMessage(MessageModel message, Guid chatGuidId);
+    public void SendMessage(MessageModel message);
     
     public void CreateChat(string chatName, string[] userNames);
 
     public void AddChatMember(string userName,string chatName , Guid chatGuid);
 
     public void SignUp(string userName, string userPassword);
-
     
     public void SignIn(string userName, string userPassword);
-
 }
 
 public interface IClient

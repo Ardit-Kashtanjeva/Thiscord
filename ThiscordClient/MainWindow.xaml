@@ -10,8 +10,7 @@
         Background="#36393F"
         WindowStyle="None"
         AllowsTransparency="True"
-        ResizeMode="CanResizeWithGrip"
-        DataContext="{x:Static viewModel:MainViewModel.Instance}">
+        ResizeMode="CanResizeWithGrip">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -89,7 +88,7 @@
                            Foreground="Gray" VerticalAlignment="Center"
                            FontWeight="SemiBold">
                     </Label>
-                    <Button Width="20" Height="20" Background="Transparent" BorderThickness="0" FontWeight="Bold" Click="ButtonBase_OnClick">
+                    <Button Width="20" Height="20" Background="Transparent" BorderThickness="0" FontWeight="Bold" Command="{Binding CreateChat}">
                         <Image Source="Icons/plus.png" Visibility="Visible" Stretch="Fill" RenderOptions.BitmapScalingMode="Fant"/>
                     </Button>
                 </StackPanel>
@@ -166,8 +165,7 @@
                 <TextBox Grid.Row="1"
                          Height="50"
                          Text="Message @Username"
-                         Style="{StaticResource MessageBox}"
-                         DataContext="{x:Static viewModel:MainViewModel.Instance}"/>
+                         Style="{StaticResource MessageBox}"/>
 
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"

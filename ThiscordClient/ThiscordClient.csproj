@@ -31,6 +31,7 @@
 
   <ItemGroup>
     <PackageReference Include="Castle.Core" Version="5.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>

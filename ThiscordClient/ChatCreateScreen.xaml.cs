@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Windows;
-using System.Windows.Input;
+﻿using System.Windows;
 using ThiscordClient.MVVM.ViewModel;
-using ThiscordClient.Core;
 
 namespace ThiscordClient
 {
@@ -13,29 +8,10 @@ namespace ThiscordClient
     /// </summary>
     public partial class ChatCreateScreen : Window
     {
-        public string ChatName { get; set; }
-        public Guid ChatGuid { get; set; }
-        public TCPSendReceive TcpSendReceive = TCPSendReceive.instance;
-        public ObservableCollection<string> UsernameList { get; } = new();
-
-        public ChatCreateScreen()
+        public ChatCreateScreen(ChatCreateViewModel chatCreateViewModel)
         {
             InitializeComponent();
-            DataContext = this;
-        }
-
-        private void TxtUsername_OnKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-                UsernameList.Add(txtUsername.Text);
-            }
-        }
-
-        private void BtnSubmit_OnClick(object sender, RoutedEventArgs e)
-        {
-            Close();
-            TcpSendReceive._server.CreateChat(txtChatName.Text, UsernameList.ToArray());
+            DataContext = chatCreateViewModel;
         }
     }
 }

@@ -39,7 +39,6 @@ public class ServerTcp
         }
     }
 
-
     private void HandleTargetMessages(UserClient userClient)
     {
         NetworkStream stream = userClient.TcpClient.GetStream();
@@ -97,6 +96,4 @@ public class ServerTcp
 
         method.Invoke(_server, parameters);
     }
-    
-    
 }
